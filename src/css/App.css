@@ -1,0 +1,245 @@
+@font-face {
+  font-family: titleFont;
+  src: url('./VarelaRound-Regular.ttf') format('truetype');
+}
+body, html {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.full-background{
+  height: -webkit-fill-available;
+  object-fit: fill;
+  width: 100%;
+}
+.frontHeadline{
+  font-family: titleFont;
+  position: fixed;
+  top: 5%;
+  right: 10%;
+}
+.langugeDivCss{
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  display: grid;
+  grid-row-gap: 8px;
+}
+.churchOne{
+  left: -94px;
+  top: -63px;
+  position: fixed; 
+  width: 728px;
+  height: 1091px;
+} 
+.churchTwo{
+  left: 540px; 
+  top: 133px; 
+  position: fixed; 
+  width: 401px;
+  height: 530px;
+}
+.churchThree{
+  left: 1042px;
+  top: 239px;
+  position: fixed;
+  width: 342px;
+  height: 276px;
+}
+.churchFour{
+  right: -74px;
+  top: 422px;
+  position: fixed;
+  width: 757px;
+  height: 536px;
+}
+.churchFive{
+  left: 724px; 
+  top: 357px; 
+  position: fixed; 
+  width: 443px;
+  height: 503px;
+}
+.particularBackGround{
+
+  height: -webkit-fill-available;
+  object-fit: fill;
+  width: 100%;
+}
+.rightToLeftHomeBtn{
+
+  position: fixed;
+  top: 50px;
+  left: 200px;
+  width: 80px;
+  height: 30px;
+}
+.heInfoPageTitle{
+  margin-bottom: 0;
+}
+.titleFont{
+  font-family: titleFont;
+  font-weight: 300;
+}
+.infoTextBoxLeftToRight{
+
+  position: fixed;
+  top: 16%;
+  width: 33%;
+  height: 325px;
+}
+.textBoxCss{
+  position: fixed;
+  top: 7%;
+  right: 4%;
+  width: 34%;
+  display: grid;
+}
+.textCss{    
+  position: fixed;
+  top: 25%;
+  height: 555px;
+  direction: rtl;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
+  right: 8%;
+  width: 40%;
+}
+.buttomScrollOneHE{
+  position: relative;
+  top: -38px;
+  left: 37%;
+}
+.buttomScrollOneEN {
+  position: absolute;
+  bottom: -220px;
+  right: 83px;
+}
+.topScrollOneHE{
+  position: relative;
+  left: 50%;
+  top: 40%;
+  height: 20px;
+}
+.topScrollOneEN{
+  position: fixed;
+  left: 10%;
+  top: 17%;
+  height: 20px;
+}
+.leftToRightLangDiv{
+ 
+  position: fixed;
+  top:150px;
+  right: 70px;
+  display: grid;
+  grid-row-gap: 8px;
+  z-index: 99;
+}
+.enInfoTitle{
+  position: fixed;
+  left: 4%;
+  top: 21%;
+}
+.frontPageEnTitle{
+  margin-left: 21%;
+  margin-bottom: 0%;
+}
+.frontPageUnderline{
+  margin-left: 18%;
+}
+.topInfoScrollEn{
+  visibility: hidden;
+  position: fixed;
+  left: 18%;
+  top: 29%;
+  height: 20px;
+}
+.infoEnText{
+  font-family: Papyrus;
+  position: fixed;
+  font-size: 18px;
+  left: 8%;
+  top: 30%;
+  width: 31%;
+  line-height: 1.6;
+  height: 46%;
+  overflow: scroll;
+}
+.buttomInfoScroll{
+  position: absolute;
+  bottom: -53%;
+  right: 83px;
+}
+
+.homeBtn{
+  position: fixed;
+  bottom: 15px;
+  right: 200px;
+  z-index: 10;
+}
+
+#timelineBackground{
+  width: auto;
+}
+.languagesDiv{
+  position: fixed;
+  display: flex;
+  grid-row-gap: 8px;
+  z-index: 99;
+  bottom: 25px;
+  left: 40px;
+}
+.addMargin{
+  margin-right: 15px;
+}
+.frameCss{
+  position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+.holydaysContinue{
+  position: fixed;
+  top: 50%;
+  left: 1%;
+}
+.holyTitle{
+  position: fixed;
+  width: 698px;
+  top: 8%;
+  text-align: center;
+  left: 607px;
+}
+.titleBoxHeb{
+  position: fixed;
+  top: 17%;
+  right: 8%;
+  text-align: right;
+}
+.scroll-button-container {
+  position: fixed;
+  bottom: 17%;
+  left: 35%;
+}
+.scroll-container-heb{
+  position: fixed;
+  bottom: 17%;
+  right: 42%;
+}
+.left-scroll {
+  margin-right: 20px;
+}
+.front-page-title{
+  position: fixed;
+  right: 4%;
+  top: 12%;
+  display: inline;
+  text-align: center;
+}
+.front-h1{
+  margin-bottom: 3px;
+}

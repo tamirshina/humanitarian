@@ -1,49 +1,56 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
-import backgroundEn from "../assets/01-back-ENG.png";
-import backgroundHeb from "../assets/02-back-HEB.png";
-import videoHeb from "../assets/05-first-transion-heb.mp4";
-import videoEn from "../assets/04-first-transition-en.mp4";
+import React, { useContext, useState, useEffect } from 'react';
+import backgroundImg from '../assets/screen01/01_back.png';
+import button1 from '../assets/screen01/button01.png';
+import button2 from '../assets/screen01/button02.png';
+import button3 from '../assets/screen01/button03.png';
+import russianText from "../textInserters/RussianText";
+import englishText from "../textInserters/EnglishText";
+import hebrewText from "../textInserters/HebrewText";
 import LangContext from "../LangContext";
-import hebHandArrow from "../assets/Arrow-HEB.png";
-import enHandArrow from "../assets/06-Arrow-ENG.png";
-import mapCircle from "../assets/03-map-circle.png";
-import "../App.css";
-import TextInserter from "../texthandling/TextInserter";
 
-function FrontPage({ playVideo }) {
+function FrontPage({ moveToParticularInfo }) {
 
-  const { lang } = useContext(LangContext);
-  const [isRightToLeft, setIsRightToLeft] = useState(false);
-  const mapCircleImg = useRef(null);
-  const handArrow = useRef(null);
+    const { lang } = useContext(LangContext);
+    const [isRightToLeft, setIsRightToLeft] = useState(false);
 
-  useEffect(() => {
-    if (lang === "hebrew") {
-      setIsRightToLeft(true);
-    } else {
-      setIsRightToLeft(false);
+    useEffect(() => {
+        if (lang === "hebrew") {
+            setIsRightToLeft(true);
+        } else {
+            setIsRightToLeft(false);
+        }
+    }, [lang]);
+
+    function whichFileToUse() {
+        if (lang === "hebrew") {
+            return hebrewText;
+        }
+        if (lang === "english") {
+            return englishText;
+        } else {
+            return russianText;
+        }
     }
-  }, [lang]);
 
-  const hundelOnClick = () => {
-    playVideo();
-    mapCircleImg.current.style.visibility = "hidden";
-    handArrow.current.classList.add("fade");
-  };
+    return (
 
-  return (
-    <>
-      <video
-        poster={isRightToLeft ? backgroundHeb : backgroundEn}
-        id="zoomInVideo"
-        src={isRightToLeft ? videoHeb : videoEn}
-        className="fullBackground"
-      />
-      <img ref={handArrow} src={isRightToLeft ? hebHandArrow : enHandArrow} className={isRightToLeft ? "hand-heb-arrow" : "hand-en-arrow"} alt="hand arrow" />
-      <img src={mapCircle} ref={mapCircleImg} alt="map circle" onClick={hundelOnClick} className={isRightToLeft ? "map-circle-heb" : "map-circle-en"} />
-      <TextInserter />
-    </>
-  );
+        <>
+            <img src={backgroundImg} alt='backgroundImage' className='full-background' />
+            <div>
+                <span>{whichFileToUse().titles.school}</span>
+                <img src={button1} onClick={moveToParticularInfo} id='school' alt='school' className='churchFront churchOne' />
+            </div>
+            <div>
+                <span>{whichFileToUse().titles.diseases}</span>
+                <img src={button2} onClick={moveToParticularInfo} id='diseases' alt='diseases' className='churchFront churchTwo' />
+            </div>
+            <div>
+                <span>{whichFileToUse().titles.hospital}</span>
+                <img src={button3} onClick={moveToParticularInfo} id='hospital' alt='hospital' className='churchFront churchThree' />
+            </div>
+        </>
+
+    );
 }
 
 export default FrontPage;

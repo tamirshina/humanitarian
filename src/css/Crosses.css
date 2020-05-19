@@ -1,0 +1,99 @@
+#greekCross{ 
+	 left: 659px; 
+	 top: 705px; 
+	 position: absolute; 
+	 width: 244px;
+	 height: 226px;
+} 
+#CRCross{ 
+	 left: 394px; 
+	 top: 703px; 
+	 position: absolute; 
+	 width: 245px;
+	 height: 226px;
+} 
+#jeruCross{ 
+	 left: 141px; 
+	 top: 706px; 
+	 position: absolute; 
+	 width: 247px;
+	 height: 228px;
+} 
+
+#patCross{ 
+	 left: 658px; 
+	 top: 455px; 
+	 position: absolute; 
+	 width: 243px;
+	 height: 230px;
+} 
+
+#byzCross{ 
+	 left: 400px; 
+	 top: 458px; 
+	 position: absolute; 
+	 width: 243px;
+	 height: 228px;
+} 
+.move{
+	-webkit-transform: translate(200px,-360px);
+	transition-duration        : 0.5s;
+}
+#sibirCross{ 
+	 left: 146px; 
+	 top: 456px; 
+	 position: absolute; 
+	 width: 240px;
+	 height: 225px;
+} 
+
+#russianCross{ 
+	 left: 392px; 
+	 top: 98px; 
+	 position: absolute; 
+	 width: 243px;
+	 height: 331px;
+}
+.crossesTitleEN{
+	position: fixed;
+    right: 27%;
+    top: 16%;
+} 
+.crossesParaEN{
+	font-family: Papyrus;
+	position: fixed;
+	font-size: 18px;
+    right: 15%;
+    top: 27%;
+    width: 25%;
+    line-height: 1.6;
+    height: 42%;
+    overflow: hidden;
+}
+.crossesParaHE{
+	text-align: right;
+	line-height: 1.6;
+	font-size: 18px;
+    height: 500px;
+    overflow: scroll;
+    font-family: Papyrus;
+    position: fixed;
+    top: 25%;
+    right: 9%;
+	width: 30%;
+	direction: rtl;
+	white-space: pre-line;
+}
+.crossesTitleHE{
+	position: fixed;
+    right: 8%;
+    top: 16%;
+}
+.crossesPageHeTitle{
+	float: right;
+    margin-right: 9%;
+    margin-bottom: 0%;
+}
+.crossesHeUnderline{
+	margin-left: 26%;
+}

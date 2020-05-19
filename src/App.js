@@ -1,75 +1,55 @@
 import React, { useState } from 'react';
+import './css/App.css';
 import FrontPage from './pages/FrontPage';
-import IsraelPage from './pages/IsraelPage';
-import HomeBtn from './fragments/HomeBtn';
-import LanguageButtons from './fragments/LanguageButtons';
-import './App.css';
-import JerusalemPage from './pages/JerusalemPage';
+import DiseasesPage from './pages/DiseasesPage';
+import LanguageDiv from './fragments/LanguageButtons';
+import HospitalPage from './pages/HospitalPage';
+import SchoolPage from './pages/HospitalPage';
 
 function App() {
 
-  const [isFrontPage, setIstFrontPage] = useState(true);
-  const [isIsraelPage, setIstIsraelPage] = useState(false);
-  const [isJerusalemPage, setIsJerusalemPage] = useState(false);
+  const [isFrontPage, setIsFrontPage] = useState(true);
+  const [isHospitalPage, setIsHospitalPage] = useState(false);
+  const [isDiseasesPage, setIsDiseasesPage] = useState(false);
+  const [isSchoolPage, setIsSchoolPage] = useState(false);
 
 
-  const homeBtnLogic = () => {
+  const moveToParticularInfo = (e) => {
 
-    setIstFrontPage(true);
-    setIstIsraelPage(false);
-  }
-  const playVideo = () => {
-
-    const videoElem = document.getElementById("zoomInVideo");
-    const frontText = document.getElementById("frontPageText");
-    if (videoElem) {
-      videoElem.play();
-      videoElem.onplay = (event) => {
-        if (frontText) {
-          frontText.classList.add("fade");
-        }
-        setTimeout(function () {
-          setIstIsraelPage(true);
-        }, 3500);
-      };
-      videoElem.onended = (event) => {
-        setIstFrontPage(false);
-      };
+    if (e) {
+      switch (e.currentTarget.id) {
+        case "hospital":
+          setIsHospitalPage(true);
+          setIsFrontPage(false);
+          break;
+        case "school":
+          setIsSchoolPage(true);
+          setIsFrontPage(false);
+          break;
+        case "diseases":
+          setIsDiseasesPage(true);
+          setIsFrontPage(false);
+          break;
+        default:
+          setIsFrontPage(true);
+          break;
+      }
     }
-  };
-  const playIsraelVideo = () => {
-
-    const videoElem = document.getElementById("israelPageVideo");
-    const elemntToFade = document.getElementsByClassName("container-to-fade");
-    if (videoElem) {
-      videoElem.play();
-      videoElem.onplay = (event) => {
-        elemntToFade[0].classList.add("fade");
-        elemntToFade[1].classList.add("fade");
-        setTimeout(function () {
-          setIsJerusalemPage(true);
-        }, 2500);
-      };
-      videoElem.onended = (event) => {
-        setIstIsraelPage(false);
-      };
-    }
-  };
-
-  const backToIsraelPage = () => {
-
-    setIstIsraelPage(true);
-    setIsJerusalemPage(false);
   }
-
+  const homeBtn = () => {
+    setIsFrontPage(true);
+    setIsHospitalPage(false);
+    setIsDiseasesPage(false);
+    setIsSchoolPage(false);
+  }
 
   return (
     <>
-      {isFrontPage && <FrontPage playVideo={playVideo} />}
-      {isIsraelPage && <IsraelPage playIsraelVideo={playIsraelVideo} />}
-      {isJerusalemPage && <JerusalemPage homeBtnLogic={homeBtnLogic} backToIsraelPage={backToIsraelPage} />}
-      {!isFrontPage && <HomeBtn homeBtnLogic={homeBtnLogic} />}
-      <LanguageButtons />
+      <LanguageDiv />
+      {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} />}
+      {isHospitalPage && <HospitalPage homeBtnLogic={homeBtn} />}
+      {isDiseasesPage && <DiseasesPage homeBtnLogic={homeBtn} />}
+      {isSchoolPage && <SchoolPage homeBtnLogic={homeBtn} />}
     </>
   );
 }
