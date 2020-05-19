@@ -1,0 +1,279 @@
+@font-face {
+  font-family: titleFont;
+  src: url("./assets/VarelaRound-Regular.ttf") format("truetype");
+}
+
+body,
+html {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.frontTitle {
+  position: fixed;
+  top: 15%;
+  left: 28%;
+  font-size: 25px;
+  width: 818px;
+  display: inline;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 3s;
+}
+.frontTitle.fade {
+  opacity: 0;
+}
+.frontTitleIppo {
+  position: relative;
+  bottom: 15px;
+}
+.frontLogo {
+  position: fixed;
+  top: 29%;
+  left: 35%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.frontLogo.fade {
+  opacity: 0;
+}
+.fullBackground {
+  height: -webkit-fill-available;
+  object-fit: fill;
+  width: 100%;
+}
+.textBoxCss {
+  position: fixed;
+  top: 5%;
+  right: 4%;
+  direction: rtl;
+  display: grid;
+}
+.addTitleFont {
+  font-family: titleFont;
+}
+.menu-general-title {
+  position: fixed;
+  left: 9%;
+  word-wrap: break-word;
+  width: 190px;
+  font-size: 11px;
+  display: inline-flex;
+  text-align: center;
+}
+.menu-general-heb {
+  position: fixed;
+  left: 10.5%;
+  word-wrap: break-word;
+  width: 138px;
+  font-size: 13px;
+  display: inline-flex;
+  text-align: center;
+}
+.heb-menu-title {
+  direction: rtl;
+}
+.ippo-title {
+  top: 15%;
+}
+.ippo-title h1 {
+  margin-top: 32px;
+  width: 100%;
+}
+.headsOf-title {
+  top: 24%;
+}
+.humanitarian-title {
+  top: 35%;
+}
+.importentStructures-title {
+  top: 45.5%;
+}
+.hitrovo-title {
+  top: 56%;
+}
+.hitrovo-title h1 {
+  width: 100%;
+  margin-top: 33px;
+}
+
+.languagesDiv {
+  position: fixed;
+  display: flex;
+  grid-row-gap: 8px;
+  z-index: 99;
+  bottom: 25px;
+  left: 40px;
+}
+.activeTitle {
+  position: relative;
+  right: 17%;
+  top: 14px;
+}
+.heb-active-arrow {
+  position: relative;
+  right: 37%;
+  top: 14px;
+}
+.menu-title-add {
+  position: absolute;
+  color: #ddc175;
+}
+.homeBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 200px;
+  z-index: 10;
+}
+.reMenu {
+  position: fixed;
+  top: 1%;
+  left: 3%;
+}
+.infoEnText {
+  font-family: Papyrus;
+  font-size: 21px;
+  text-align: left;
+  line-height: 1.6;
+  /* overflow: scroll; */
+  /* width: 44%;
+  height: 30%; */
+}
+.image-text-container {
+  position: fixed;
+  top: 24%;
+  left: 48%;
+  width: 46%;
+  overflow: scroll;
+  height: 60%;
+}
+.heads-text {
+  font-family: Papyrus;
+  font-size: 21px;
+  text-align: left;
+  line-height: 1.6;
+  overflow: scroll;
+}
+.image-for-imageText {
+  height: 100px;
+  width: 100px;
+}
+.item-container-image-text {
+  display: -webkit-inline-box;
+}
+.scroll-button-container {
+  position: fixed;
+  bottom: 7%;
+  right: 45%;
+  opacity: 0.5;
+}
+.left-scroll {
+  margin-right: -20px;
+}
+.infoHeText {
+  font-family: Papyrus;
+  font-size: 19px;
+  text-align: right;
+  line-height: 1.6;
+  direction: rtl;
+  white-space: pre-line;
+  margin-top: 0;
+}
+.addMargin {
+  margin-right: 15px;
+}
+.humanitarianBuildings {
+  width: 100%;
+  margin-top: -78px;
+}
+.item-container-heb {
+  direction: rtl;
+  display: -webkit-inline-box;
+  margin-top: 25px;
+  width: 782px;
+}
+.heb-heads-text {
+  font-family: Papyrus;
+  white-space: pre-line;
+  font-size: 18px;
+  line-height: 1.6;
+  overflow: scroll;
+  margin-top: 0;
+  margin-right: 16px;
+  direction: rtl;
+}
+.map-circle-heb{
+  position: fixed;
+  bottom: -7px;
+  left: 358px;
+}
+.map-circle-en{
+  position: fixed;
+  bottom: -7px;
+  right: 358px;
+}
+.en-text-box{
+  position: fixed;
+  top: 8%;
+  left: 4%;
+  display: grid;
+}
+.side-shape{
+  float: right;
+  width: 609px;
+  shape-outside: polygon(566px 0, 0px 500px, 0px 526px);
+  height: 565px;
+}
+.text-shape-container{
+  width: 950px;
+}
+.heb-text-shape-container{
+  width: 1000px;
+}
+.heb-side-shape{
+  float: left;
+  width: 600px;
+  shape-outside: polygon(0px 0px, 793px 611px, 29px 0);
+  height: 800px;
+}
+.hand-heb-arrow{
+  position: fixed;
+  left: 3%;
+  bottom: 5%;
+  transition: opacity 1s;
+  opacity: 1;
+}
+.hand-heb-arrow.fade{
+  opacity: 0;
+}
+.hand-en-arrow{
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  transition: opacity 1s;
+  opacity: 1;
+}
+.hand-en-arrow.fade{
+  opacity: 0;
+}
+.container-to-fade{
+  transition: opacity 1s;
+  opacity: 1;
+}
+.container-to-fade.fade{
+  opacity: 0;
+}
+.jerusalem-icon{
+  position: fixed;
+  top: 38%;
+  left: 46%;
+  transition: opacity 1s;
+  opacity: 1;
+}
+.jerusalem-icon.fade{
+  opacity: 0;
+}
+.jerusalem-box{
+  
+}
