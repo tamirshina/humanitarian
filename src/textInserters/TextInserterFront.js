@@ -1,12 +1,11 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
-import RighToLeftTitle from '../fragments/RightToLeftTitle';
-import LeftToRightTitle from '../fragments/LeftToRightTitle';
+import headerUnderline from '../assets/10-HeaderunderlineEn.png';
 import { timer, removeTimer } from '../TimerHundler';
 import ScrollBtns from "../fragments/ScrollBtns";
 import LangContext from "../LangContext";
 import '../css/App.css';
 
-function TextInserterParticular({ info, position, homeBtnLogic }) {
+function TextInserterFront({ info, homeBtnLogic }) {
 
     const { lang } = useContext(LangContext);
     const [isRightToLeft, setIsRightToLeft] = useState(false);
@@ -40,15 +39,18 @@ function TextInserterParticular({ info, position, homeBtnLogic }) {
 
     return (
 
-        <div className='text-inserter-container'>
-            {isRightToLeft ?
-                <LeftToRightTitle titleToInsert={info.title} /> :
-                <RighToLeftTitle titleToInsert={info.title} />}
-            <p ref={textParaEl} className={isRightToLeft ? 'infoEnText' : 'text-particular'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
-            </p>
-            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={position} />
+        <div className='front-text-container'>
+            <div className='front-info-title'>
+                <div className='title-text-front'>{info.title}</div>
+                <img alt='underline' src={headerUnderline} className='frontPageUnderline' />
+            </div>
+            <div className='front-paragraph-container'>
+                <p ref={textParaEl} className={isRightToLeft ? 'infoEnText' : 'textCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
+                </p>
+            </div>
+            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} />
         </div>
     );
 }
 
-export default TextInserterParticular;
+export default TextInserterFront;

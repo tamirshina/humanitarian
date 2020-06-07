@@ -4,7 +4,7 @@ import FrontPage from './pages/FrontPage';
 import DiseasesPage from './pages/DiseasesPage';
 import LanguageDiv from './fragments/LanguageButtons';
 import HospitalPage from './pages/HospitalPage';
-import SchoolPage from './pages/HospitalPage';
+import SchoolPage from './pages/SchoolPage';
 
 function App() {
 

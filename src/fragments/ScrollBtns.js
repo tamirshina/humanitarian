@@ -4,7 +4,7 @@ import scrollDwonImg from "../assets/Down.png";
 import LangContext from "../LangContext";
 import "../css/App.css";
 
-function ScrollingBtn({ scrollDown, scrollUp }) {
+function ScrollingBtn({ scrollDown, scrollUp, position }) {
 
     const { lang } = useContext(LangContext);
     const [isRightToLeft, setIsRightToLeft] = useState(false);
@@ -19,14 +19,13 @@ function ScrollingBtn({ scrollDown, scrollUp }) {
 
 
     return (
-        <div className={isRightToLeft ? "scroll-button-container" : "scroll-container-heb"} >
+        <div style={position}>
             <img
                 src={scrollUpImg}
                 alt="scroll-up"
                 onClick={scrollUp}
-                className={"left-scroll"}
             />
-            <img src={scrollDwonImg} alt="scroll-up" onClick={scrollDown} />
+            <img src={scrollDwonImg} alt="scroll-up" onClick={scrollDown} className='right-scroll-btn' />
         </ div>
     );
 }

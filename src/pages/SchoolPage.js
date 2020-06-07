@@ -18,6 +18,8 @@ function CrossesPage({ homeBtnLogic }) {
 
       useEffect(() => {
             timer(homeBtnLogic);
+            console.log("whichFileToUse().school")
+            console.log(whichFileToUse().school)
             if (lang === "hebrew") {
                   setIsRightToLeft(true);
             } else {
@@ -26,6 +28,7 @@ function CrossesPage({ homeBtnLogic }) {
             return () => { // Return callback to run on unmount.
                   removeTimer();
             };
+
 
       }, [homeBtnLogic, lang]);
 
@@ -40,18 +43,19 @@ function CrossesPage({ homeBtnLogic }) {
             }
       }
 
-      const info = whichFileToUse.school;
       const position = {
 
+            position: "fixed",
+            bottom: "20%",
+            left: "11%"
       }
 
 
       return (
             <>
                   <img src={isRightToLeft ? backgroundHeb : backgroundEn} alt='backgroundImage' className='particularBackGround'></img>
-                  <ScrollBtns />
                   <HomeBtn homeBtnLogic={homeBtnLogic} />
-                  <TextInserter Info={info} position={position} />
+                  <TextInserter info={whichFileToUse().school} position={position} />
             </>
 
       );

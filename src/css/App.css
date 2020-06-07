@@ -27,39 +27,88 @@ body, html {
   grid-row-gap: 8px;
 }
 .churchOne{
-  left: -94px;
-  top: -63px;
-  position: fixed; 
-  width: 728px;
-  height: 1091px;
+  right: 76px;
+  bottom: 185px;
+  position: fixed;
 } 
+.text-title-front-one{
+  position: absolute;
+  left: 33%;
+  bottom: 82px;
+}
 .churchTwo{
-  left: 540px; 
-  top: 133px; 
-  position: fixed; 
-  width: 401px;
-  height: 530px;
+  bottom: 202px;
+  left: 312px;
+  position: fixed;
+}
+.text-title-front-two{
+  position: absolute;
+  left: 200px;
+  bottom: 82px;
 }
 .churchThree{
-  left: 1042px;
-  top: 239px;
+  left: 6px;
+  bottom: 192px;
   position: fixed;
-  width: 342px;
-  height: 276px;
 }
-.churchFour{
-  right: -74px;
-  top: 422px;
+.text-title-front-three{
+  position: absolute;
+  left: 200px;
+  bottom: 82px;
+}
+.front-text-container{
   position: fixed;
-  width: 757px;
-  height: 536px;
+  left: 36%;
+  top: 5%;
+  width: 500px;
 }
-.churchFive{
-  left: 724px; 
-  top: 357px; 
-  position: fixed; 
-  width: 443px;
-  height: 503px;
+.front-info-title{
+  position: relative;
+  text-align: center;
+}
+.title-text-front{
+  font-family: titleFont;
+    font-weight: 300;
+    font-size: 43px;
+}
+.front-paragraph-container{
+  position: relative;
+}
+.textCss{    
+  height: 800px;
+  direction: rtl;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
+}
+.scroll-button-container {
+  position: fixed;
+  bottom: 5%;
+  left: 35%;
+}
+.right-scroll-btn{
+  margin-left: -80px;
+  margin-bottom: 4px;
+}
+.text-inserter-container{
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  width: 500px;
+}
+.titleBoxHeb{
+  position: relative;
+  top: 17%;
+  right: 8%;
+  text-align: right;
+}
+.text-particular{
+  height: 555px;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
 }
 .particularBackGround{
 
@@ -95,18 +144,6 @@ body, html {
   right: 4%;
   width: 34%;
   display: grid;
-}
-.textCss{    
-  position: fixed;
-  top: 25%;
-  height: 555px;
-  direction: rtl;
-  line-height: 1.6;
-  font-size: 18px;
-  white-space: pre-line;
-  overflow: scroll;
-  right: 8%;
-  width: 40%;
 }
 .buttomScrollOneHE{
   position: relative;
@@ -214,17 +251,7 @@ body, html {
   text-align: center;
   left: 607px;
 }
-.titleBoxHeb{
-  position: fixed;
-  top: 17%;
-  right: 8%;
-  text-align: right;
-}
-.scroll-button-container {
-  position: fixed;
-  bottom: 17%;
-  left: 35%;
-}
+
 .scroll-container-heb{
   position: fixed;
   bottom: 17%;
@@ -242,4 +269,7 @@ body, html {
 }
 .front-h1{
   margin-bottom: 3px;
+}
+.someClass{
+  position: relative;
 }
