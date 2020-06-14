@@ -1,6 +1,4 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
-import RighToLeftTitle from '../fragments/RightToLeftTitle';
-import LeftToRightTitle from '../fragments/LeftToRightTitle';
 import { timer, removeTimer } from '../TimerHundler';
 import ScrollBtns from "../fragments/ScrollBtns";
 import LangContext from "../LangContext";
@@ -37,16 +35,18 @@ function TextInserterParticular({ info, position, homeBtnLogic }) {
 
         textParaEl.current.scrollTop -= 10;
     }
+    const hebPosition = {
+        position: "fixed",
+        right: "11%",
+        bottom: "20%"
+    }
 
     return (
 
-        <div className='text-inserter-container'>
-            {isRightToLeft ?
-                <LeftToRightTitle titleToInsert={info.title} /> :
-                <RighToLeftTitle titleToInsert={info.title} />}
-            <p ref={textParaEl} className={isRightToLeft ? 'infoEnText' : 'text-particular'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
+        <div className={isRightToLeft ? 'heb-school-text-container' : 'text-inserter-container'}>
+            <p ref={textParaEl} className={isRightToLeft ? 'school-info-heb' : 'text-particular'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
             </p>
-            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={position} />
+            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
         </div>
     );
 }

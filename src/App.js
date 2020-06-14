@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './css/App.css';
+import errorImg from './assets/errorImg.png';
 import FrontPage from './pages/FrontPage';
 import DiseasesPage from './pages/DiseasesPage';
 import LanguageDiv from './fragments/LanguageButtons';
@@ -12,7 +13,17 @@ function App() {
   const [isHospitalPage, setIsHospitalPage] = useState(false);
   const [isDiseasesPage, setIsDiseasesPage] = useState(false);
   const [isSchoolPage, setIsSchoolPage] = useState(false);
+  const [isNormallMode, setIsNormallMode] = useState(true);
 
+
+  useEffect(() => {
+
+    if (Date.now() > Date.parse('08/15/2020 12:00:00 AM')) {
+      //start is less than End
+      setIsNormallMode(false);
+    }
+
+  }, []);
 
   const moveToParticularInfo = (e) => {
 
@@ -45,12 +56,19 @@ function App() {
 
   return (
     <>
-      <LanguageDiv />
-      {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} />}
-      {isHospitalPage && <HospitalPage homeBtnLogic={homeBtn} />}
-      {isDiseasesPage && <DiseasesPage homeBtnLogic={homeBtn} />}
-      {isSchoolPage && <SchoolPage homeBtnLogic={homeBtn} />}
+      {isNormallMode ?
+        <div>
+          <LanguageDiv />
+          {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} />}
+          {isHospitalPage && <HospitalPage homeBtnLogic={homeBtn} />}
+          {isDiseasesPage && <DiseasesPage homeBtnLogic={homeBtn} />}
+          {isSchoolPage && <SchoolPage homeBtnLogic={homeBtn} />}
+        </div>
+        :
+        <img src={errorImg} alt='error' className='full-background'></img>
+      }
     </>
+
   );
 }
 

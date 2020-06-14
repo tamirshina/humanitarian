@@ -43,7 +43,7 @@ body, html {
 }
 .text-title-front-two{
   position: absolute;
-  left: 200px;
+  left: 118px;
   bottom: 82px;
 }
 .churchThree{
@@ -53,14 +53,20 @@ body, html {
 }
 .text-title-front-three{
   position: absolute;
-  left: 200px;
-  bottom: 82px;
+  left: 132px;
+  bottom: 69px;
 }
 .front-text-container{
   position: fixed;
   left: 36%;
   top: 5%;
   width: 500px;
+}
+.front-text-container-en{
+  position: fixed;
+  left: 40%;
+  top: 6%;
+  width: 437px;
 }
 .front-info-title{
   position: relative;
@@ -82,6 +88,13 @@ body, html {
   white-space: pre-line;
   overflow: scroll;
 }
+.enTextCss{
+  height: 800px;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
+}
 .scroll-button-container {
   position: fixed;
   bottom: 5%;
@@ -93,7 +106,7 @@ body, html {
 }
 .text-inserter-container{
   position: fixed;
-  left: 10%;
+  left: 12%;
   top: 10%;
   width: 500px;
 }
@@ -110,11 +123,50 @@ body, html {
   white-space: pre-line;
   overflow: scroll;
 }
+.item-container{
+  position: fixed;
+  left: 50px;
+  top: 44px;
+  width: 43%;
+  height: 900px;
+  overflow: scroll;height: 900px;
+  overflow: scroll;
+}
+.item-container-heb{
+  position: fixed;
+  right: 50px;
+  top:44px;
+  width: 43%;
+  direction: rtl;
+  height: 900px;
+  overflow: scroll;
+}
+.school-info-heb{
+  direction: rtl;
+  height: 555px;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
+}
+.heb-school-text-container{
+  width: 500px;
+  position: fixed;
+  right: 12%;
+  top: 10%;
+}
 .particularBackGround{
 
   height: -webkit-fill-available;
   object-fit: fill;
   width: 100%;
+}
+.diseases-title-container{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.item-container-small{
+  display: grid;
 }
 .rightToLeftHomeBtn{
 
@@ -177,7 +229,7 @@ body, html {
   z-index: 99;
 }
 .enInfoTitle{
-  position: fixed;
+  position: relative;
   left: 4%;
   top: 21%;
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import LangContext from "../LangContext";
-import backgroundEn from '../assets/background-EN.png';
-import backgroundHeb from '../assets/background-HEB.png';
+import backgroundEn from '../assets/hospital/04_background_HEB.png';
+import backgroundHeb from '../assets/hospital/04_background_HEB.png';
 import TextInserter from '../textInserters/TextInserter';
 import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
@@ -40,7 +40,6 @@ function HospitalPage({ homeBtnLogic }) {
         }
     }
 
-    const info = whichFileToUse.hospital;
     const position = {
 
     }
@@ -52,7 +51,7 @@ function HospitalPage({ homeBtnLogic }) {
             <img src={isRightToLeft ? backgroundHeb : backgroundEn} alt='backgroundImage' className='particularBackGround'></img>
             <ScrollBtns />
             <HomeBtn homeBtnLogic={homeBtnLogic} />
-            <TextInserter Info={info} position={position} />
+            <TextInserter info={whichFileToUse().hospital} position={position} />
         </>
 
     );

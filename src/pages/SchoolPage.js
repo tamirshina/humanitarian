@@ -9,17 +9,14 @@ import TextInserter from '../textInserters/TextInserter';
 import { timer, removeTimer } from '../TimerHundler';
 import '../css/App.css';
 import HomeBtn from '../fragments/HomeBtn';
-import ScrollBtns from '../fragments/ScrollBtns';
 
-function CrossesPage({ homeBtnLogic }) {
+function SchoolPage({ homeBtnLogic }) {
 
       const { lang } = useContext(LangContext);
       const [isRightToLeft, setIsRightToLeft] = useState(false);
 
       useEffect(() => {
             timer(homeBtnLogic);
-            console.log("whichFileToUse().school")
-            console.log(whichFileToUse().school)
             if (lang === "hebrew") {
                   setIsRightToLeft(true);
             } else {
@@ -62,4 +59,4 @@ function CrossesPage({ homeBtnLogic }) {
 
 }
 
-export default CrossesPage;
+export default SchoolPage;

@@ -39,13 +39,13 @@ function TextInserterFront({ info, homeBtnLogic }) {
 
     return (
 
-        <div className='front-text-container'>
+        <div className={isRightToLeft ? 'front-text-container' : 'front-text-container-en'}>
             <div className='front-info-title'>
                 <div className='title-text-front'>{info.title}</div>
                 <img alt='underline' src={headerUnderline} className='frontPageUnderline' />
             </div>
             <div className='front-paragraph-container'>
-                <p ref={textParaEl} className={isRightToLeft ? 'infoEnText' : 'textCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
+                <p ref={textParaEl} className={isRightToLeft ? 'textCss' : 'enTextCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
                 </p>
             </div>
             <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} />
