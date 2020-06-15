@@ -149,6 +149,21 @@ body, html {
   white-space: pre-line;
   overflow: scroll;
 }
+.hospital-info-heb{
+  direction: rtl;
+  height: 800px;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
+}
+.hospital-info-en{
+  height: 800px;
+  line-height: 1.6;
+  font-size: 18px;
+  white-space: pre-line;
+  overflow: scroll;
+}
 .heb-school-text-container{
   width: 500px;
   position: fixed;
@@ -168,6 +183,22 @@ body, html {
 .item-container-small{
   display: grid;
 }
+.hospital-click-container{
+  position: fixed;
+  top:15%;
+  right: 15%;
+}
+.hospital-text-background{
+  position: fixed;
+  top: 3%;
+  right: 1%;
+}
+.hospital-text-background-en{
+  position: fixed;
+  top: 3%;
+  left: 1%;
+}
+
 .rightToLeftHomeBtn{
 
   position: fixed;

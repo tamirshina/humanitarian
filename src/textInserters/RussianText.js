@@ -1,3 +1,4 @@
+import hospitalStas from '../assets/hospital/AccountabilityRu.png';
 const russianText = {
 
     id: "russianText",
@@ -72,6 +73,11 @@ const russianText = {
         The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
         This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
         The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the 
+        <img
+        src=${hospitalStas}
+        alt="humanitarian buildings"
+        class="humanitarianBuildings"
+      />
         `
     },
     Diseases: {
