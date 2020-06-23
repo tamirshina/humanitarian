@@ -2,7 +2,7 @@ const englishText = {
 
     id: "englishText",
     titles: {
-        hospital: "stats",
+        hospital: "The hospital in jerusalem",
         school: "being in school",
         Diseases: "Diseas book"
     },

@@ -39,16 +39,28 @@ function FrontPage({ moveToParticularInfo }) {
         <>
             <img src={backgroundImg} alt='backgroundImage' className='full-background' />
             <div className='churchOne' id='school' onClick={moveToParticularInfo}>
-                <span className='text-title-front-one'>{whichFileToUse().titles.school}</span>
-                <img src={button1} alt='school' />
+                <div className='containerBox'>
+                    <div style={{ left: "-7px" }} className='text-box'>
+                        <h4 className='title-small-front'>{whichFileToUse().titles.school}</h4>
+                    </div>
+                    <img className='my-img' src={button1} alt='school' />
+                </div>
             </div>
             <div className='churchTwo' id='diseases' onClick={moveToParticularInfo}>
-                <span className='text-title-front-two'>{whichFileToUse().titles.Diseases}</span>
-                <img src={button2} alt='diseases' />
+                <div className='containerBox'>
+                    <div style={{ left: "13px" }} className='text-box'>
+                        <h4 className='title-small-front'>{whichFileToUse().titles.Diseases}</h4>
+                    </div>
+                    <img className='my-img' src={button2} alt='school' />
+                </div>
             </div>
             <div className='churchThree' id='hospital' onClick={moveToParticularInfo}>
-                <span className='text-title-front-three'>{whichFileToUse().titles.hospital}</span>
-                <img src={button3} alt='hospital' />
+                <div className='containerBox'>
+                    <div className={isRightToLeft ? 'text-box' : 'text-box small-leftLang-front'} >
+                        <h4 className='title-small-front'>{whichFileToUse().titles.hospital}</h4>
+                    </div>
+                    <img className='my-img' src={button3} alt='school' />
+                </div>
             </div>
             <TextInserter info={whichFileToUse().frontPage} />
         </>

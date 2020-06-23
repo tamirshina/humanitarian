@@ -74,8 +74,8 @@ body, html {
 }
 .title-text-front{
   font-family: titleFont;
-    font-weight: 300;
-    font-size: 43px;
+  font-weight: 300;
+  font-size: 33px;
 }
 .front-paragraph-container{
   position: relative;
@@ -355,4 +355,38 @@ body, html {
 }
 .someClass{
   position: relative;
+}
+.containerBox {
+  position: relative;
+  display: inline-block;
+}
+.text-box {
+  position: absolute;    
+  height: 100%;
+  text-align: center;    
+  width: 100%;
+}
+.text-box:before {
+ content: '';
+ display: inline-block;
+ height: 100%;
+ vertical-align: middle;
+}
+.title-small-front{
+  font-family: titleFont;
+  font-weight: 300;
+}
+h4 {
+ display: inline-block;
+ font-size: 24px; /*or whatever you want*/ 
+}
+.my-img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+.small-leftLang-front{
+  left: 28px;
+  top: 20px;
+  max-width: 250px;
 }

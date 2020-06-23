@@ -3,76 +3,66 @@ const russianText = {
 
     id: "russianText",
     titles: {
-        hospital: "stats",
-        school: "being in school",
-        Diseases: "Diseas book"
+        hospital: "Иерусалимская больница",
+        school: "Школьные истории",
+        Diseases: "Книга болезней"
     },
     frontPage: {
-        title: `some title`,
+        title: `Просвещение и медицинское обслуживание на Святой земле`,
         info: `
-        8 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses`
+        Просвещение
+До возникновения ИППО в Палестине не уделялось особое внимание просвещению. В конце XIX – начале XX вв.  Палестина, территория Израиля, была крайне неразвита. Османская империя вкладывала минимальные средства в просвещение и медицину.
+Средства на эти цели приходили государственных источников, а также частных лиц Российской империи.
+Перед ИППО стояли две основные цели. Первая, создать систему православного воспитания на Святой земле. Вторая, создать систему качественного просвещения для местных жителей в таких областях, как арифметика, естественные науки, природоведение и изучение языков.
+Помимо качества просвещения, Общество стремится к созданию новых зданий и специального оборудования на уровне, которого не было в Палестине. Эти факторы делают православное воспитание особо притягательным для местного населения. Количество желающих учиться в православных школах превышает количество учебных мест.
+Таким образом, система просвещения быстро расширяется на Ближнем Востоке, наряду со школами возникают учительские семинарии, их выпускники, количество которых постоянно растёт, продолжают просветительские традиции.
+Общество создало в те годы два образовательных центра: мужской в Назарете и женский в Бейт Джала. Они были интернатами, в которых жили учителя и ученики.  При интернатах были амбулатории, обслуживавшие не только учеников и учителей, но и местное население.
+Кроме интернатов, Обществом были созданы школы в Галилее и Иудее. В 1899 г. в Палестине было создано 23 школы, в которых обучались 1074 ученика: 497 девочек и 577 мальчиков. Восемь лет спустя были Обществом были созданы 101 школа, в которых учились более 5,000 учеников.
+
+Медицинское обслуживание
+Общество вложило немалые средства с целью предоставить достойные медицинские услуги паломникам и учащимся в Палестине.
+Первостепенной задачей стало строительство современной больницы в Иерусалиме. Средства не экономились, строительство высококачественной больницы было завершено. В дальнейшем при больнице был открыт роддом, амбулатория, отделение инфекционных болезней и т.д. Больница обслуживала паломников, священнослужителей, а также неимущее население Иерусалима. Больные, не имеющие связи с православием, иногда составляли более половины пациентов больницы, которая стала гордостью Российской империи, во-первых, благодаря качеству обслуживания, а во-вторых, благодаря неоценимой помощи православной общине Иерусалима.
+Амбулатории при интернатах в Нацерете и Бейт-Джале также оказывали медицинские услуги высокого уровня местному нуждающемуся населению.
+Учителей обучали оказанию первой медицинской помощи для приёма больных в амбулаториях.
+Количество пациентов, получивших медицинские услуги в учреждениях Общества, росло с каждым годом. Так, в 1900 году их было 83,743, а в 1911 – 127,000. Только в иерусалимской больнице была оказана помощь примерно 25,000 пациентам в течение года.
+`
     },
     school: {
-        title: `some title`,
+        title: `Школьные истории`,
         info: `
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the 
+<b>Школьные истории</b>
+
+Первый день в новой школе, я так волнуюсь! Отец так много рассказывал мне, что школа станет для нас настоящей семьёй. Здесь в деревне все мои друзья – мусульмане из мусульманских семей, я очень привязана к ним. Но наша семья: родители, сёстры мой брат и  я – христиане, и не просто христиане, а православные! Я так люблю молиться, глядя на икону с изображением Иисуса Христа в гостиной. Мама рассказывала, что он жил неподалёку в Назарете. Однажды, мы всей семьёй, с бабушкой и дедушкой, ездили в Назарет, но не видели там Иисуса. Дедушка сказал, что он хранит нас с небес и находится в сердце каждого из нас.
+
+<b>Первая ночь</b>
+
+Новая школа выглядит так красиво! Она такая чистая, гораздо чище, чем моя прежняя школа, в ней такие удобные стулья. Я так волнуюсь перед первой молитвой «Отче наш» вместе с другими учениками, потом – первый урок с новой учительницей нашей веры, прибывшей из далёкой страны – России. Папа рассказывал, что там очень холодно, гораздо холоднее, чем у нас. Не понимаю, как это может быть. Учительница приплыла на корабле из России, потому что в здешних школах не рассказывают про Иисуса и творимые им чудеса. Она так много знает о нашем боге. У неё золотые волосы, я таких никогда не видела, и она такая замечательная!
+
+<b>Вторая ночь</b>
+
+Какой замечательный день! Мне так нравится мой новый класс. Одни девочки, нет противных мальчишек, дергающих за волосы. Вместе мы прочитали все молитвы. Учительница рассказала нам о чуде хлеба и рыб. Раньше я никогда не слышала об этом чуде в школе, только дома.
+В два часа  мы обедали. Было очень вкусно, перед едой помолились. Учительница сказала, чтобы мы научили своих домашних правильно благословлять еду, если они не умеют. Мне так хочется рассказать об этом дома!
+Каждый день перед обедом две девочки помогают в столовой. После еды каждая убирает свои тарелки. Нур, девочка из класса, плохо вела себя за столом и смеялась во время молитвы. Учительница пообещала наказать её. Я познакомилась с Шираз, мы с ней теперь лучшие подруги! Она живёт в Кфар Кана, я знаю, где это, там живёт мамина сестра, прошлым летом мы ездили к ней. Шираз и я получили задание убрать класс после уроков , но мы заигрались и забыли убрать. Теперь уже поздно, мы устали и хотим спать. Завтра встанем пораньше, до восхода солнца, и при свете лампы уберём класс до прихода учительницы.
+
+<b>Третья ночь</b>
+
+Ой! Нас раскрыли. Сегодня утром, до рассвета, Когда Шираз и я убирали класс, пришёл Исмаил, школьный сторож. У него есть ключи от всех классов. Он рассказал о нас учительнице Марии. Мария любит нас, потому что мы хорошо учимся и усердно молимся. В наказание она велела нам убирать класс в течение недели, но за хорошее поведение обещала отменить наказание через два дня.
+Нур всё время мешает на уроках, поэтому её ждёт суровое наказание: она будет читать молитву «Отче наш» после уроков в течение двух недель. Это очень тяжёлое наказание!
+Мне по-прежнему очень нравится наша школа, у меня много новых подруг. В пятницу мы вернёмся домой к родителям, мне не терпится всё им рассказать
+Спасибо тебе, наш Спаситель Иисус Назаретский!
+Спасибо!
         `
     },
     hospital: {
         title: `some title`,
         info: `
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the Lord's houses
-        Area of ​​Russian Compound -
-        
-        68 acres of land near the Jaffa Gate, which are now part of central Jerusalem, but in the years when Russian interest in Jerusalem was renewed, it was a tract of land surrounding agricultural land outside the Old City walls.
-        The land acquisition process began in June 1857 for three years and ended in October 1860 A total of 5 plots of land were purchased, and the sixth part was granted by the Turkish authorities as a gift to the Czar.
-        This area was used before the construction of a public square, where celebrations and ceremonies or military arrangements were held. The square was called by the Turks al-Maidan.
-        The Russian plan was to establish a kind of small city, Palestinian Russia, to serve the Russian pilgrims who visit the Holy Land. It included a church (Holy Trinity Church), a hospital, the 
+        Иерусалимская больница была предназначена, прежде всего, для оказания медицинской помощи многочисленным российским паломникам в Палестине, количество которых неуклонно росло. Многие из них были людьми пожилыми, привыкшими к прохладному российскому климату. Продолжительное плавание на корабле, а также тяжёлые условия жизни в Палестине в конце XIX- начале XX вв.	, были губительны для них. Многие нуждались в лечении. Ежегодно в Палестину прибывало около 12,000 паломников из России, им было необходимо оказывать качественные медицинские услуги, которые не могли предоставляли турецкие власти. Главным из таких лечебных учреждений стала иерусалимская больница.
+Большинство пациентов были паломники, для которых эта поездка, приуроченная, как правило, к христианским праздникам, была важнейшим событием в жизни. Попадая в больницу, они надеялись получить скорую помощь, чтобы не пропустить посещение святых мест, молебны, посещения церквей и монастырей, даже совместные вечерние трапезы. Многие больные преждевременно покидали больницу против воли врачей, чтобы продолжить путешествие.
+Во время Великого поста многие паломники отказывались от сытной пищи и довольствовались низкокалорийной едой, добровольно отказавшись от яиц, молочных и мясных блюд.  Они продолжали поститься даже, находясь в больнице, что плохо сказывалось на их здоровье.
+В Иерусалиме в то время были другие больницы, которые действовали под покровительством других правительств или частных лиц. Количество коек в этих больницах было меньше, чем в Русской больнице. Так, в немецкой больнице было 40 коек, во французской – 32, в английской – 27, в греческой – 25, в еврейской больнице «Бикур холим» - 25, в еврейской больнице, названной в честь барона Ротшильда – 18 коек. В Русской больнице было 75 коек. 
+Помимо палат для больных, в больнице была одна операционная, а также инфекционное отделение. По сведениям ИППО, в конце XIX – начале XX вв. около трети больных были госпитализированы в связи с малярией или дизентерией, средняя продолжительность госпитализации была 16 дней. В больнице работали 14 человек – врачи, сёстры и фармацевты.
+
+
         <img
         src=${hospitalStas}
         alt="humanitarian buildings"
