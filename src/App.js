@@ -6,6 +6,7 @@ import DiseasesPage from './pages/DiseasesPage';
 import LanguageDiv from './fragments/LanguageButtons';
 import HospitalPage from './pages/HospitalPage';
 import SchoolPage from './pages/SchoolPage';
+import HomeBtn from './fragments/HomeBtn';
 
 function App() {
 
@@ -60,9 +61,10 @@ function App() {
         <div>
           <LanguageDiv />
           {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} />}
-          {isHospitalPage && <HospitalPage homeBtnLogic={homeBtn} />}
-          {isDiseasesPage && <DiseasesPage homeBtnLogic={homeBtn} />}
-          {isSchoolPage && <SchoolPage homeBtnLogic={homeBtn} />}
+          {isHospitalPage && <HospitalPage />}
+          {isDiseasesPage && <DiseasesPage />}
+          {isSchoolPage && <SchoolPage />}
+          {!isFrontPage && <HomeBtn homeBtnLogic={homeBtn} />}
         </div>
         :
         <img src={errorImg} alt='error' className='full-background'></img>

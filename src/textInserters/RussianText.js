@@ -384,7 +384,5 @@ const russianText = {
             }
         ]
     }
-
-
 }
 export { russianText as default };

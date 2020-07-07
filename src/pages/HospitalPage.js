@@ -56,7 +56,7 @@ function HospitalPage({ homeBtnLogic }) {
     const positionEn = {
         position: 'fixed',
         top: '5%',
-        left: '5%',
+        left: '61%',
         width: '650px'
     }
 
@@ -65,15 +65,10 @@ function HospitalPage({ homeBtnLogic }) {
     return (
         <>
             <img src={isRightToLeft ? backgroundHeb : backgroundEn} alt='backgroundImage' className='particularBackGround'></img>
-            {!isPageClicked && <div className='hospital-click-container'>
-                <img src={cloudImg} alt='cloud' onClick={handleHandClick} className='hospital-cloud' />
-                <img src={handImg} alt='hand' onClick={handleHandClick} className='hospital-hand' />
-            </div>}
-            <HomeBtn homeBtnLogic={homeBtnLogic} />
-            {isPageClicked && <div>
-                <img src={isRightToLeft ? textBox : textBoxEn} alt='bacground' className={isRightToLeft ? 'hospital-text-background' : 'hospital-text-background-en'} />
+            <div>
+                <img src={textBox} alt='bacground' className='hospital-text-background' />
                 <TextInserter info={whichFileToUse().hospital} positionHeb={positionHeb} positionEn={positionEn} />
-            </div>}
+            </div>
         </>
 
     );
