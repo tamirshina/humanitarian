@@ -34,6 +34,10 @@ function FrontPage({ moveToParticularInfo }) {
             return russianText;
         }
     }
+    const opentextbox = () => {
+
+        isShowText ? setIsShowText(false) : setIsShowText(true);
+    }
 
 
     return (
@@ -64,7 +68,7 @@ function FrontPage({ moveToParticularInfo }) {
                     <img className='my-img' src={button3} alt='school' />
                 </div>
             </div>
-            <div className='title-box-four' id='hospital' onClick={moveToParticularInfo}>
+            <div className='title-box-four' style={whichFileToUse().titles.cssAdjust} id='humanitarian' onClick={opentextbox}>
                 <div className='containerBox'>
                     <div className={isRightToLeft ? 'text-box' : 'text-box small-leftLang-front'} >
                         <h4 className='title-small-front'>{whichFileToUse().titles.frontPage}</h4>
@@ -72,8 +76,10 @@ function FrontPage({ moveToParticularInfo }) {
                     <img className='my-img' src={button3} alt='school' />
                 </div>
             </div>
-            {isShowText && <img src={textBox} alt='text box' className='front-page-text-box' />}
-            {isShowText && <TextInserter info={whichFileToUse().frontPage} />}
+            {isShowText && <div>
+                <TextInserter info={whichFileToUse().frontPage} />
+                <img src={textBox} alt='text box' className='front-page-text-box' />
+            </div>}
         </>
 
     );

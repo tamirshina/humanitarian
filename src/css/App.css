@@ -63,15 +63,16 @@ body, html {
 }
 .front-text-container{
   position: fixed;
-  left: 36%;
-  top: 5%;
-  width: 500px;
+  right: 19%;
+  top: 36%;
+  width: 1050px;
+  z-index: 1;
 }
 .front-text-container-en{
   position: fixed;
-  left: 40%;
-  top: 6%;
-  width: 437px;
+  left: 23%;
+  top: 31%;
+  z-index: 1;
 }
 .front-info-title{
   position: relative;
@@ -83,10 +84,10 @@ body, html {
   font-size: 33px;
 }
 .front-paragraph-container{
-  position: relative;
+
 }
 .textCss{    
-  height: 800px;
+  height: 600px;
   direction: rtl;
   line-height: 1.6;
   font-size: 18px;
@@ -94,7 +95,8 @@ body, html {
   overflow: scroll;
 }
 .enTextCss{
-  height: 800px;
+  height: 670px;
+  width: 1000px;
   line-height: 1.6;
   font-size: 18px;
   white-space: pre-line;
@@ -390,8 +392,8 @@ display: block;
 max-width: 100%;
 height: auto;
 }
-.small-leftLang-front{
-  left: 28px;
-  top: 20px;
-  max-width: 250px;
+.front-page-text-box{
+  position: fixed;
+  top: 16%;
+  left: 12%;
 }

@@ -1,5 +1,4 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
-import headerUnderline from '../assets/10-HeaderunderlineEn.png';
 import { timer, removeTimer } from '../TimerHundler';
 import ScrollBtns from "../fragments/ScrollBtns";
 import LangContext from "../LangContext";
@@ -37,18 +36,26 @@ function TextInserterFront({ info, homeBtnLogic }) {
         textParaEl.current.scrollTop -= 10;
     }
 
+    const position = {
+        position: 'relative',
+        float: 'right',
+        bottom: '55px'
+    }
+    const positionHeb = {
+        position: 'relative',
+        float: 'left',
+        bottom: '21px',
+        right: '9%'
+    }
+
     return (
 
         <div className={isRightToLeft ? 'front-text-container' : 'front-text-container-en'}>
-            <div className='front-info-title'>
-                <div className='title-text-front'>{info.title}</div>
-                <img alt='underline' src={headerUnderline} className='frontPageUnderline' />
-            </div>
             <div className='front-paragraph-container'>
                 <p ref={textParaEl} className={isRightToLeft ? 'textCss' : 'enTextCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
                 </p>
             </div>
-            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} />
+            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? positionHeb : position} />
         </div>
     );
 }
