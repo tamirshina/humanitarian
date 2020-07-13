@@ -39,7 +39,8 @@ function TextInserterFront({ info, homeBtnLogic }) {
     const position = {
         position: 'relative',
         float: 'right',
-        bottom: '55px'
+        bottom: '55px',
+        left: '107px'
     }
     const positionHeb = {
         position: 'relative',

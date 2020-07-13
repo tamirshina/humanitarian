@@ -133,7 +133,7 @@ body, html {
 .item-container{
   position: fixed;
   left: 50px;
-  top: 44px;
+  top: 100px;
   width: 43%;
   height: 900px;
   overflow: scroll;height: 900px;
@@ -142,7 +142,7 @@ body, html {
 .item-container-heb{
   position: fixed;
   right: 50px;
-  top:44px;
+  top:100px;
   width: 43%;
   direction: rtl;
   height: 900px;
@@ -186,6 +186,7 @@ body, html {
 .diseases-title-container{
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 .item-container-small{
   display: grid;
@@ -396,4 +397,14 @@ height: auto;
   position: fixed;
   top: 16%;
   left: 12%;
+}
+.diseases-small-title{
+  font-weight: bold;
+}
+.small-title-underline{
+  width: 225px;
+  margin-top: 4px;
+}
+.item-container-small-heb{
+  display: grid;
 }

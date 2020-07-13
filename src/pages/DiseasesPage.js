@@ -9,6 +9,7 @@ import HomeBtn from "../fragments/HomeBtn";
 import LangContext from "../LangContext";
 import ScrollBtns from '../fragments/ScrollBtns';
 import headerUnderline from '../assets/10-HeaderunderlineEn.png';
+import hebHeaderUnderline from '../assets/10_Headerunderline.png';
 import '../css/App.css';
 
 function ParticularInfoPage({ homeBtnLogic }) {
@@ -59,12 +60,12 @@ function ParticularInfoPage({ homeBtnLogic }) {
   const info = whichFileToUse().Diseases;
   const position = {
     position: "fixed",
-    left: "40%",
+    left: "47%",
     bottom: "5%"
   }
   const hebPosition = {
     position: "fixed",
-    right: "40%",
+    right: "47%",
     bottom: "5%"
   }
 
@@ -78,11 +79,6 @@ function ParticularInfoPage({ homeBtnLogic }) {
       }>
         <div className='diseases-title-container'>
           <div>{info.title}</div>
-          <img
-            src={headerUnderline}
-            alt="someImage"
-            className="image-for-imageText"
-          />
         </div>
         {info.book.map((item) => {
           return (
@@ -94,11 +90,11 @@ function ParticularInfoPage({ homeBtnLogic }) {
                   : "item-container-small"
               }
             >
-              <span>{item.title}</span>
+              <span className='diseases-small-title' >{item.title}</span>
               <img
-                src={headerUnderline}
+                src={isRightToLeft ? hebHeaderUnderline : headerUnderline}
                 alt="someImage"
-                className="image-for-imageText"
+                className="small-title-underline"
               />
               <p
                 dangerouslySetInnerHTML={createMarkup(item.info)}

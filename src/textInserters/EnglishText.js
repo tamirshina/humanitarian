@@ -1,3 +1,4 @@
+import hospitalStas from '../assets/hospital/AccountabilityRu.png';
 const englishText = {
 
     id: "englishText",
@@ -31,7 +32,7 @@ const englishText = {
     school: {
         title: `School Stories`,
         info: `
-        School Stories
+        <b>School Stories</b>
 
 This is my first day in the new school and I am very excited! My father has told me a lot about this school; he says that this school is like us, like my family. Here in my village all my friends are Muslim and such are their families; I love them greatly. My sisters, my brother and I are, like our mom and dad, Christians, and not just any Christians, but Orthodox Christians! I like praying and watching the icon of Jesus Christ in the red corner of the house (red corner – the corner of the house where it is customary to pray, the word for “red” in Russian is close to the word for “beauty”). Mom says that Jesus used to live not far from us, in Nazareth. Once, our family together with grandpa and grandma visited Nazareth but we did not meet him. Grandpa says that he is guarding us from the Heavens and that he is found in our hearts.
 
@@ -53,8 +54,10 @@ Thank you our Lord and Savior Jesus Christ, thank you.
         `
     },
     hospital: {
-        title: `some title`,
+        title: `The hospital in Jerusalem`,
         info: `
+        <b>The hospital in Jerusalem</b>
+
         The hospital in Jerusalem was erected first and foremost in order to provide for the medical needs of the ever-increasing influx of Russian pilgrims reaching Palestine. A significant portion of the pilgrims was of old age and used to the climatic conditions of Russia. The long journeys in ships and the living conditions in Palestine during the late 19th and early 20th centuries took a heavy toll on the pilgrims thus the pressing need for medical attention. Moreover, the growing numbers of pilgrims, which reached an annual peak of nearly 12,000 men and women, further stressed the need for provision of quality medical services in Palestine; services which were not granted by the Ottoman rule.
 
 Most of the admitted patients in the hospital were sojourners in the course of a life-changing quest,  which they would usually materialize during significant holidays in the christian calendar. The patients yearned for the quickest possible treatment so that they do not miss the tours to holy sites, the prayers, the visits to churches and monasteries and even the communal shared dinner. As a result large numbers of patients were eager to leave the hospital in the middle of their treatment, against doctors’ evaluations, so that they can reconnect to their friends for their quest in the Holy Land.
@@ -64,6 +67,12 @@ During the period of the Great Fast (the most important fast of the liturgical y
 Amidst this period in Jerusalem there were additional hospitals; they were also operated by foreign governments and private benefactors and each provided an inferior number of beds compared to the Russian hospital – the big German hospital contained 40 beds, the French hospital had 32 beds, the English hospital 27 beds, the Greek hospital 25 beds, the Jewish hospital “Bikur Cholim” contained 25 beds and the Rothschild Jewish hospital had 18 beds while the Russian hospital had a capacity of 75 beds.
 
 Apart from the hospital beds, the Russian hospital contained a surgery room and a contagious illnesses department. From data collected by the Society it is seen that by the end of the 19th century and the beginning of the 20th century one third of the admitted patients suffered from malaria or dysentery, the average treatment time was 16 days and the hospital employed 14 staff members – doctors, pharmacists and nurses. 
+
+<img
+        src=${hospitalStas}
+        alt="humanitarian buildings"
+        class="humanitarianBuildings"
+      />
         `
     },
     Diseases: {
