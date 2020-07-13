@@ -1,0 +1,87 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1920px;
+	 height: 1080px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #back 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1920px;
+	 height: 1117px;
+	 z-index:1;
+} 
+
+ #Down 
+{ 
+	 left: 767px; 
+	 top: 980px; 
+	 position: absolute; 
+	 width: 42px;
+	 height: 41px;
+	 z-index:2;
+} 
+
+ #UP 
+{ 
+	 left: 717px; 
+	 top: 983px; 
+	 position: absolute; 
+	 width: 130px;
+	 height: 42px;
+	 z-index:3;
+} 
+
+ #button01 
+{ 
+	 left: 1556px; 
+	 top: 707px; 
+	 position: absolute; 
+	 width: 285px;
+	 height: 184px;
+	 z-index:4;
+} 
+
+ #button02 
+{ 
+	 left: 312px; 
+	 top: 717px; 
+	 position: absolute; 
+	 width: 259px;
+	 height: 159px;
+	 z-index:5;
+} 
+
+ #button03 
+{ 
+	 left: 8px; 
+	 top: 728px; 
+	 position: absolute; 
+	 width: 302px;
+	 height: 156px;
+	 z-index:6;
+} 
+
+ #frame 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1920px;
+	 height: 1080px;
+	 z-index:7;
+} 

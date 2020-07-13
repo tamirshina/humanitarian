@@ -5,7 +5,8 @@ const hebrewText = {
     titles: {
         hospital: "טיפולים בבית החולים",
         school: "יום בחיי בית הספר",
-        Diseases: "ספר מחלות"
+        Diseases: "ספר מחלות",
+        frontPage: "חינוך ורפואה בארץ הקודש"
     },
     frontPage: {
         title: `חינוך ורפואה בארץ הקודש`,
@@ -386,6 +387,5 @@ const hebrewText = {
             }
         ]
     }
-
 }
 export { hebrewText as default };

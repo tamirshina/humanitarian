@@ -26,9 +26,9 @@ body, html {
   display: grid;
   grid-row-gap: 8px;
 }
-.churchOne{
-  right: 76px;
-  bottom: 185px;
+.title-box-one{
+  right: 574px;
+  top: 78px;
   position: fixed;
 } 
 .text-title-front-one{
@@ -36,9 +36,9 @@ body, html {
   left: 33%;
   bottom: 82px;
 }
-.churchTwo{
-  bottom: 202px;
-  left: 312px;
+.title-box-two{
+  top: 81px;
+  left: 630px;
   position: fixed;
 }
 .text-title-front-two{
@@ -46,9 +46,14 @@ body, html {
   left: 118px;
   bottom: 82px;
 }
-.churchThree{
-  left: 6px;
-  bottom: 192px;
+.title-box-three{
+  left: 266px;
+  top: 85px;
+  position: fixed;
+}
+.title-box-four{
+  right: 76px;
+  top: 85px;
   position: fixed;
 }
 .text-title-front-three{
