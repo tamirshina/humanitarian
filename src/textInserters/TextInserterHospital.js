@@ -36,8 +36,14 @@ function TextInserterParticular({ info, positionHeb, positionEn, homeBtnLogic })
 
     const hebPosition = {
         position: "fixed",
-        right: "32%",
-        bottom: "12%"
+        right: "34%",
+        bottom: "9%"
+    }
+
+    const enPosition = {
+        position: "fixed",
+        right: "2%",
+        bottom: "8%"
     }
 
     return (
@@ -45,7 +51,7 @@ function TextInserterParticular({ info, positionHeb, positionEn, homeBtnLogic })
         <div style={isRightToLeft ? positionHeb : positionEn} onScroll={handleScroll}>
             <p ref={textParaEl} className={isRightToLeft ? 'hospital-info-heb' : 'hospital-info-en'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
             </p>
-            <img src={scrollIcon} alt={'scroll-icon'} style={hebPosition} />
+            <img src={scrollIcon} alt={'scroll-icon'} style={isRightToLeft ? hebPosition : enPosition} />
         </div>
     );
 }
