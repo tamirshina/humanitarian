@@ -1,6 +1,5 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
 import { timer, removeTimer } from '../TimerHundler';
-import ScrollBtns from "../fragments/ScrollBtns";
 import scrollIcon from "../assets/scroll-icon.png";
 import LangContext from "../LangContext";
 
@@ -10,6 +9,7 @@ function TextInserterFront({ info, homeBtnLogic }) {
 
     const { lang } = useContext(LangContext);
     const [isRightToLeft, setIsRightToLeft] = useState(false);
+    const [isScrollDebounce, setIsScrollDebounce] = useState(true);
     const textParaEl = useRef(null);
 
     useEffect(() => {
@@ -20,23 +20,20 @@ function TextInserterFront({ info, homeBtnLogic }) {
         }
     }, [lang]);
 
+    function handleScroll() {
+        if (isScrollDebounce) {
+            setIsScrollDebounce(false);
+            resetTimer();
+            setTimeout(function () { setIsScrollDebounce(true); }, 2000);
+        }
+    }
+
     function resetTimer() {
         removeTimer();
         timer(homeBtnLogic);
     }
 
     function createMarkup(str) { return { __html: str } };
-
-    const scrollAndUpdateDown = () => {
-
-        resetTimer();
-        textParaEl.current.scrollTop += 10;
-    }
-
-    const scrollAndUpdateUp = () => {
-
-        textParaEl.current.scrollTop -= 10;
-    }
 
     const position = {
         position: 'relative',
@@ -54,7 +51,7 @@ function TextInserterFront({ info, homeBtnLogic }) {
     return (
 
         <div className={isRightToLeft ? 'front-text-container' : 'front-text-container-en'}>
-            <div className='front-paragraph-container'>
+            <div className='front-paragraph-container' onScroll={handleScroll}>
                 <p ref={textParaEl} className={isRightToLeft ? 'textCss' : 'enTextCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
                 </p>
             </div>

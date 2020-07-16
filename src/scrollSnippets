@@ -1,0 +1,28 @@
+
+
+
+  const scrollAndUpdateDown = () => {
+
+    resetTimer();
+    textParaEl.current.scrollTop += 10;
+  }
+
+  const scrollAndUpdateUp = () => {
+
+    textParaEl.current.scrollTop -= 10;
+  }
+
+      <ScrollBtns scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
+
+
+      front page -
+          const scrollAndUpdateDown = () => {
+
+        resetTimer();
+        textParaEl.current.scrollTop += 10;
+    }
+
+    const scrollAndUpdateUp = () => {
+
+        textParaEl.current.scrollTop -= 10;
+    }

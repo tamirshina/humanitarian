@@ -5,9 +5,8 @@ import backgroundHeb from '../assets/screen03/03-background_HEB.png';
 import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
-import HomeBtn from "../fragments/HomeBtn";
 import LangContext from "../LangContext";
-import ScrollBtns from '../fragments/ScrollBtns';
+import scrollIcon from "../assets/scroll-icon.png";
 import headerUnderline from '../assets/10-HeaderunderlineEn.png';
 import hebHeaderUnderline from '../assets/10_Headerunderline.png';
 import '../css/App.css';
@@ -16,6 +15,7 @@ function ParticularInfoPage({ homeBtnLogic }) {
 
   const { lang } = useContext(LangContext);
   const [isRightToLeft, setIsRightToLeft] = useState(false);
+  const [isScrollDebounce, setIsScrollDebounce] = useState(true);
   const textParaEl = useRef(null);
 
   useEffect(() => {
@@ -34,15 +34,13 @@ function ParticularInfoPage({ homeBtnLogic }) {
     removeTimer();
     timer(homeBtnLogic);
   }
-  const scrollAndUpdateDown = () => {
 
-    resetTimer();
-    textParaEl.current.scrollTop += 10;
-  }
-
-  const scrollAndUpdateUp = () => {
-
-    textParaEl.current.scrollTop -= 10;
+  function handleScroll() {
+    if (isScrollDebounce) {
+      setIsScrollDebounce(false);
+      resetTimer();
+      setTimeout(function () { setIsScrollDebounce(true); }, 2000);
+    }
   }
 
   function whichFileToUse() {
@@ -72,11 +70,13 @@ function ParticularInfoPage({ homeBtnLogic }) {
   return (
     <>
       <img src={isRightToLeft ? backgroundHeb : backgroundEn} alt='backgroundImage' className='particularBackGround'></img>
-      <div ref={textParaEl} className={
-        isRightToLeft
-          ? "item-container-heb"
-          : "item-container"
-      }>
+      <div ref={textParaEl}
+        onScroll={handleScroll}
+        className={
+          isRightToLeft
+            ? "item-container-heb"
+            : "item-container"
+        }>
         <div className='diseases-title-container'>
           <div>{info.title}</div>
         </div>
@@ -104,8 +104,7 @@ function ParticularInfoPage({ homeBtnLogic }) {
           );
         })}
       </div>
-      <ScrollBtns scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
-      <HomeBtn homeBtnLogic={homeBtnLogic} />
+      <img src={scrollIcon} alt={'scroll-icon'} style={isRightToLeft ? hebPosition : position} />
     </>
 
   );

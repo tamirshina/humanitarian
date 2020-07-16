@@ -12,6 +12,7 @@ body, html {
   height: -webkit-fill-available;
   object-fit: fill;
   width: 100%;
+  margin-bottom: -4px;
 }
 .frontHeadline{
   font-family: titleFont;
@@ -182,10 +183,10 @@ body, html {
   top: 10%;
 }
 .particularBackGround{
-
   height: -webkit-fill-available;
   object-fit: fill;
   width: 100%;
+  margin-bottom: -4px;
 }
 .diseases-title-container{
   text-align: center;
