@@ -2,23 +2,18 @@ import React, { useEffect, useState, useContext } from 'react';
 import LangContext from "../LangContext";
 import backgroundEn from '../assets/hospital/04_background_HEB.png';
 import backgroundHeb from '../assets/hospital/04_background_HEB.png';
-import cloudImg from '../assets/hospital/hand.png';
-import handImg from '../assets/hospital/hand.png';
 import textBox from '../assets/hospital/text-box.png';
-import textBoxEn from '../assets/hospital/text-box-en.png';
 import TextInserter from '../textInserters/TextInserterHospital';
 import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
 import { timer, removeTimer } from '../TimerHundler';
 import '../css/App.css';
-import HomeBtn from '../fragments/HomeBtn';
 
 function HospitalPage({ homeBtnLogic }) {
 
     const { lang } = useContext(LangContext);
     const [isRightToLeft, setIsRightToLeft] = useState(false);
-    const [isPageClicked, setIsPageClicked] = useState(false);
 
     useEffect(() => {
         timer(homeBtnLogic);
@@ -33,9 +28,6 @@ function HospitalPage({ homeBtnLogic }) {
 
     }, [homeBtnLogic, lang]);
 
-    function handleHandClick() {
-        setIsPageClicked(true);
-    }
     function whichFileToUse() {
         if (lang === "hebrew") {
             return hebrewText;

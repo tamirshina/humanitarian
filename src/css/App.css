@@ -26,6 +26,10 @@ body, html {
   display: grid;
   grid-row-gap: 8px;
 }
+.title-box-size{
+  height: 150px;
+  width: 300px;
+}
 .title-box-one{
   right: 574px;
   top: 78px;
@@ -38,7 +42,7 @@ body, html {
 }
 .title-box-two{
   top: 81px;
-  left: 630px;
+  left: 605px;
   position: fixed;
 }
 .text-title-front-two{
@@ -47,8 +51,8 @@ body, html {
   bottom: 82px;
 }
 .title-box-three{
-  left: 266px;
-  top: 85px;
+  left: 261px;
+  top: 83px;
   position: fixed;
 }
 .title-box-four{
@@ -364,28 +368,20 @@ body, html {
 .someClass{
   position: relative;
 }
-.containerBox {
-  position: relative;
-  display: inline-block;
-}
 .text-box {
   position: absolute;    
   height: 100%;
   text-align: center;    
   width: 100%;
-}
-.text-box:before {
- content: '';
- display: inline-block;
- height: 100%;
- vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .title-small-front{
   font-family: titleFont;
   font-weight: 300;
 }
 h4 {
- display: inline-block;
  font-size: 24px; /*or whatever you want*/ 
 }
 .my-img {

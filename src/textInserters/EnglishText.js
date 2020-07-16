@@ -7,9 +7,6 @@ const englishText = {
         school: "being in school",
         Diseases: "Diseas book",
         frontPage: "Education and Medicine in the Holy Land",
-        cssAdjust: {
-            top: "104px"
-        }
     },
     frontPage: {
         title: `some title`,

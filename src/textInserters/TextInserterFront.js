@@ -1,7 +1,9 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
 import { timer, removeTimer } from '../TimerHundler';
 import ScrollBtns from "../fragments/ScrollBtns";
+import scrollIcon from "../assets/scroll-icon.png";
 import LangContext from "../LangContext";
+
 import '../css/App.css';
 
 function TextInserterFront({ info, homeBtnLogic }) {
@@ -39,14 +41,14 @@ function TextInserterFront({ info, homeBtnLogic }) {
     const position = {
         position: 'relative',
         float: 'right',
-        bottom: '55px',
-        left: '107px'
+        bottom: '90px',
+        left: '155px'
     }
     const positionHeb = {
         position: 'relative',
         float: 'left',
-        bottom: '21px',
-        right: '9%'
+        bottom: '85px',
+        right: '11%'
     }
 
     return (
@@ -56,7 +58,7 @@ function TextInserterFront({ info, homeBtnLogic }) {
                 <p ref={textParaEl} className={isRightToLeft ? 'textCss' : 'enTextCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
                 </p>
             </div>
-            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? positionHeb : position} />
+            <img src={scrollIcon} alt={'scroll-icon'} style={isRightToLeft ? positionHeb : position} />
         </div>
     );
 }
