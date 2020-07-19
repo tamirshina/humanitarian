@@ -1,6 +1,6 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
 import { timer, removeTimer } from '../TimerHundler';
-import scrollIcon from "../assets/scroll-icon.png";
+import ScrollBtns from "../fragments/ScrollBtns";
 import LangContext from "../LangContext";
 
 import '../css/App.css';
@@ -35,16 +35,28 @@ function TextInserterFront({ info, homeBtnLogic }) {
 
     function createMarkup(str) { return { __html: str } };
 
+    const scrollAndUpdateDown = () => {
+
+        resetTimer();
+        textParaEl.current.scrollTop += 50;
+    }
+
+    const scrollAndUpdateUp = () => {
+
+        textParaEl.current.scrollTop -= 50;
+    }
+
+
     const position = {
         position: 'relative',
         float: 'right',
-        bottom: '90px',
-        left: '155px'
+        bottom: '55px',
+        left: '140px'
     }
     const positionHeb = {
         position: 'relative',
         float: 'left',
-        bottom: '85px',
+        bottom: '33px',
         right: '11%'
     }
 
@@ -55,7 +67,7 @@ function TextInserterFront({ info, homeBtnLogic }) {
                 <p ref={textParaEl} className={isRightToLeft ? 'textCss' : 'enTextCss'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
                 </p>
             </div>
-            <img src={scrollIcon} alt={'scroll-icon'} style={isRightToLeft ? positionHeb : position} />
+            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? positionHeb : position} />
         </div>
     );
 }

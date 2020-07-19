@@ -397,6 +397,7 @@ height: auto;
 }
 .diseases-small-title{
   font-weight: bold;
+  margin-right: 5px;
 }
 .small-title-underline{
   width: 225px;
@@ -404,4 +405,7 @@ height: auto;
 }
 .item-container-small-heb{
   display: grid;
+}
+.diseases-title{
+  text-decoration: double;
 }

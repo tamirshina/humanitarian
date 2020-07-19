@@ -48,7 +48,7 @@ function App() {
       }
     }
   }
-  const homeBtn = () => {
+  const homeBtnLogic = () => {
     setIsFrontPage(true);
     setIsHospitalPage(false);
     setIsDiseasesPage(false);
@@ -61,10 +61,10 @@ function App() {
         <div>
           <LanguageDiv />
           {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} />}
-          {isHospitalPage && <HospitalPage />}
-          {isDiseasesPage && <DiseasesPage />}
-          {isSchoolPage && <SchoolPage />}
-          {!isFrontPage && <HomeBtn homeBtnLogic={homeBtn} />}
+          {isHospitalPage && <HospitalPage homeBtnLogic={homeBtnLogic} />}
+          {isDiseasesPage && <DiseasesPage homeBtnLogic={homeBtnLogic} />}
+          {isSchoolPage && <SchoolPage homeBtnLogic={homeBtnLogic} />}
+          {!isFrontPage && <HomeBtn homeBtnLogic={homeBtnLogic} />}
         </div>
         :
         <img src={errorImg} alt='error' className='full-background'></img>

@@ -6,7 +6,7 @@ import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
 import LangContext from "../LangContext";
-import scrollIcon from "../assets/scroll-icon.png";
+import ScrollBtns from "../fragments/ScrollBtns";
 import headerUnderline from '../assets/10-HeaderunderlineEn.png';
 import hebHeaderUnderline from '../assets/10_Headerunderline.png';
 import '../css/App.css';
@@ -41,6 +41,17 @@ function ParticularInfoPage({ homeBtnLogic }) {
       resetTimer();
       setTimeout(function () { setIsScrollDebounce(true); }, 2000);
     }
+  }
+
+  const scrollAndUpdateDown = () => {
+
+    resetTimer();
+    textParaEl.current.scrollTop += 50;
+  }
+
+  const scrollAndUpdateUp = () => {
+
+    textParaEl.current.scrollTop -= 50;
   }
 
   function whichFileToUse() {
@@ -78,7 +89,7 @@ function ParticularInfoPage({ homeBtnLogic }) {
             : "item-container"
         }>
         <div className='diseases-title-container'>
-          <div>{info.title}</div>
+          <div className={"diseases-title"} >{info.title}</div>
         </div>
         {info.book.map((item) => {
           return (
@@ -104,7 +115,7 @@ function ParticularInfoPage({ homeBtnLogic }) {
           );
         })}
       </div>
-      <img src={scrollIcon} alt={'scroll-icon'} style={isRightToLeft ? hebPosition : position} />
+      <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
     </>
 
   );

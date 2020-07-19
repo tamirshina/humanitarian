@@ -3,13 +3,13 @@ import homeImg from '../assets/35-home.png';
 import '../css/App.css';
 
 
-function HomeBtn ({homeBtnLogic}) {
+function HomeBtn({ homeBtnLogic }) {
 
     return (
 
-        <img src={homeImg} alt='homeBtn' onClick={homeBtnLogic} className={'homeBtn'}/>
-    
+        <img src={homeImg} alt='homeBtn' onClick={homeBtnLogic} className={'homeBtn'} />
+
     );
-  }
-  
-  export default HomeBtn;
+}
+
+export default HomeBtn;

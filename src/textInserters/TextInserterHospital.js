@@ -1,6 +1,6 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
 import { timer, removeTimer } from '../TimerHundler';
-import scrollIcon from "../assets/scroll-icon.png";
+import ScrollBtns from "../fragments/ScrollBtns";
 import LangContext from "../LangContext";
 import '../css/App.css';
 
@@ -34,16 +34,27 @@ function TextInserterParticular({ info, positionHeb, positionEn, homeBtnLogic })
 
     function createMarkup(str) { return { __html: str } };
 
+    const scrollAndUpdateDown = () => {
+
+        resetTimer();
+        textParaEl.current.scrollTop += 50;
+    }
+
+    const scrollAndUpdateUp = () => {
+
+        textParaEl.current.scrollTop -= 50;
+    }
+
     const hebPosition = {
         position: "fixed",
         right: "34%",
-        bottom: "9%"
+        bottom: "11%"
     }
 
     const enPosition = {
         position: "fixed",
-        right: "2%",
-        bottom: "8%"
+        right: "4%",
+        bottom: "11%"
     }
 
     return (
@@ -51,7 +62,7 @@ function TextInserterParticular({ info, positionHeb, positionEn, homeBtnLogic })
         <div style={isRightToLeft ? positionHeb : positionEn} onScroll={handleScroll}>
             <p ref={textParaEl} className={isRightToLeft ? 'hospital-info-heb' : 'hospital-info-en'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
             </p>
-            <img src={scrollIcon} alt={'scroll-icon'} style={isRightToLeft ? hebPosition : enPosition} />
+            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : enPosition} />
         </div>
     );
 }
