@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
 
-    if (Date.now() > Date.parse('08/15/2020 12:00:00 AM')) {
+    if (Date.now() > Date.parse('011/15/2020 12:00:00 AM')) {
       //start is less than End
       setIsNormallMode(false);
     }
