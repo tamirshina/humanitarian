@@ -3,9 +3,9 @@ const englishText = {
 
     id: "englishText",
     titles: {
-        hospital: "The hospital in jerusalem",
-        school: "being in school",
-        Diseases: "Diseas book",
+        hospital: "The Hospital in Jerusalem",
+        school: "School Life",
+        Diseases: "Diseases Records",
         frontPage: "Education and Medicine in the Holy Land",
     },
     frontPage: {
@@ -29,24 +29,31 @@ const englishText = {
     school: {
         title: `School Stories`,
         info: `
-        <b>School Stories</b>
+        <b>Memories from the school in Nazareth</b>
 
-This is my first day in the new school and I am very excited! My father has told me a lot about this school; he says that this school is like us, like my family. Here in my village all my friends are Muslim and such are their families; I love them greatly. My sisters, my brother and I are, like our mom and dad, Christians, and not just any Christians, but Orthodox Christians! I like praying and watching the icon of Jesus Christ in the red corner of the house (red corner – the corner of the house where it is customary to pray, the word for “red” in Russian is close to the word for “beauty”). Mom says that Jesus used to live not far from us, in Nazareth. Once, our family together with grandpa and grandma visited Nazareth but we did not meet him. Grandpa says that he is guarding us from the Heavens and that he is found in our hearts.
+This is my first day in the new school and I am very excited! My father has told me a lot about this school; he says that in this school all the children and the teachers will be like us, like my family. Here in my village all my friends are Muslim and such are their families; I love them greatly. My family and I are Christians. And not just any Christians, but Orthodox Christians!
+ I like praying while watching the icon of Jesus Christ in the red corner of the house (red corner – the corner of the house where it is customary to pray, the word for “red” in Russian is close to the word for “beauty”). Mom says that Jesus used to live not far from us, in Nazareth. Once, our family together with grandpa and grandma visited Nazareth but we did not meet him. Grandpa says that he is guarding us from the Heavens and that he is to be found in our hearts.
 
 <b>The first night</b>
 
-The new school is very beautiful, it is cleaner from the previous one and the chairs here are more comfortable. I am excited because in a while we will say the “Lord’s Prayer” for the first time all the children together and afterwards we will enter the first class with a teacher who believes, like us, in the Orthodox faith; she comes from a land far away, Russia. Dad says that it is colder there than here, but I do not understand how that can be. She came here on a boat from Russia because in the local school nobody talks about Jesus and the miracles he performed. She knows plenty about Jesus and Orthodoxy. She has blonde hair like I have never seen before, and she is very lovely!
+The new school is very beautiful, it is cleaner from the previous one and the chairs here are more comfortable. I am very excited because soon we will say the “Lord’s Prayer” for the first time all the children together. Afterwards we will enter the first class with a teacher who believes, like us, in the Orthodox faith; she comes from a land far away, Russia.
+ Dad says that it is colder there than here, but I do not understand how that can be. She came here on a steamboat from Russia in order to teach about Jesus and the miracles he performed. She knows plenty about Jesus and Orthodoxy. She has blonde hair like I have never seen before, and she is very lovely!
 
 <b>The second night</b>
 
-Today was so much fun! I really like my new class; they are all girls and there are no annoying boys that pull others’ hair. We sang together all the prayers and the teacher talked to us about the miracle of the bread and the fish; I had never heard this story before in school, only at home. At 2 o’clock there was a delicious lunch and we blessed for the food; the teacher told us that if at our house we are not sure about the blessing, she can teach also our family how to bless properly. I am so excited to tell everyone.
-Every afternoon, two children from the class help prepare the dining room and when we finish eating everybody cleans their plates. Nur that is in the class with me misbehaved during lunch and laughed during the prayer. The teacher said she will get punished.
-I met Shiraz and we became best friends! She lives in Kfar Kana and I know where this is because my mom’s sister is from there and we visited her last summer. Shiraz and I received the assignment of cleaning the class in the end of the day; we played so long that we forgot and now we are tired and will go to sleep. Tomorrow we will get up earlier than the rest, even before the sun, and we will clean the class with a lamp before the teacher comes.
+Today was so much fun! I really like my new class; we are all girls and there are no annoying boys that pull our hair. We sang together all the prayers and the teacher talked to us about the miracle of the bread and the fish; I had never heard this story before in school, only at home.
+ At 2 o’clock there was a delicious lunch and we blessed for the food. The teacher taught us the proper blessing for the food and encouraged us to teach it to our families, as well. I am so excited to tell everyone!
+Every afternoon, two children from the class help prepare the dining room and when we finish eating everybody cleans their own plate.
+ Nur, another girl in my class, misbehaved during lunch and laughed during the prayer and the teacher said she will get punished.
+I met Shiraz and we became best friends! She lives in Kfar Kana and I know where this is because my mom’s sister is from there and we visited her last summer. Shiraz and I received the assignment of cleaning the class in the end of the day but we played so long that we forgot and now we are tired and will go to sleep. Tomorrow we plan get up earlier than the rest, even before the sun, and we will clean the class with a lamp before the teacher comes.
 
 <b>The third night</b>
 
-Ugh! We got caught...today in the morning, even before sunrise when Shiraz and I began to clean the classroom, Ismail, the school janitor, entered. He has the keys to all classrooms. He told our teacher, Maria. Maria loves us because we are good pupils and pray with full intention in our hearts; the punishment she gave us was to clean the classroom for a whole week but she told us that if we continue to behave well, it will only be two days. Nur molests a lot and got a greater punishment, she will have to recite the “Lord’s Prayer” at the end of the lesson for two weeks. This is a very hard punishment!
-I still love my new school very much and I have a lot of new friends; On Friday we will get back home to our parents and I cannot wait to tell them everything.
+Ugh! We got caught...today in the morning, even before sunrise. When Shiraz and I began to clean the classroom, Ismail, the school janitor, entered and caught us. He has the keys to all classrooms and he  told our teacher Maria at once. Maria loves us because we are good pupils and pray with full intention in our hearts; the punishment she gave us was to clean the classroom for a whole week but she told us that if we continue to behave well, it will only be for two days.
+ Nur, who molests a lot, got a greater punishment and she will have to recite the “Lord’s Prayer” at the end of the lesson for two weeks in a row. This is a very hard punishment!
+I still love my new school very much and I have a lot of new friends.
+On Friday we will get back home to our parents and I cannot wait to tell them everything!
+
 Thank you our Lord and Savior Jesus Christ, thank you.
         `
     },

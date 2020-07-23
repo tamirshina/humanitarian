@@ -9,7 +9,7 @@ const russianText = {
         frontPage: "Просвещение и медицинское обслуживание на Святой земле",
         cssAdjust: {
             width: '289px',
-            right: '84px'
+            right: '88px'
         }
     },
     frontPage: {
