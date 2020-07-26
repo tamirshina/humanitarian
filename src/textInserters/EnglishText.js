@@ -199,7 +199,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Contusion`,
                 info: `
                 bruise; a type of mild hematoma of tissue, the most common cause being capillaries damaged by trauma. 
-                No. of cases – 2.             
+                No. of cases – 15.             
         `
             },
             {
@@ -311,7 +311,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Neirolin`,
                 info: `
                 not known. 
-                No. of cases – 2. 
+                No. of cases – 3. 
         `
             },
             {
@@ -319,7 +319,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Distortion`,
                 info: `
                 visual distortion; an error of the brain in the decoding of the visible input from the eyes. 
-                No. of cases – 4.       
+                No. of cases – 5.       
         `
             },
             {
@@ -327,7 +327,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Phlegmone`,
                 info: `
                 cellulitis or inflammation of tissue below the surface of the skin; it presents inflammatory signs of local swelling, sensitivity, pain, redness and increase in temperature. Frequently, these symptoms are accompanied by fever, chills, bradycardia, low blood pressure, headaches and sweating. 
-                No. of cases – 9.                 
+                No. of cases – 4.                 
         `
             },
             {
@@ -335,15 +335,13 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Parulis`,
                 info: `
                 intraoral dental sinus; inflammatory state of gum tissue in the mouth. It is considered to be one of the most recurrent intraoral problems and generally presents bleeding and gum pain. More than 90% of the population suffers from parulis during their lifetime at some point or another. 
-                No. of cases – 28.                 
+                No. of cases – 1.                 
         `
             },
             {
                 id: 'thirdyThree',
-                title: `Листериоз`,
-                info: `
-                заболевание, вызываемое бактерией листерии. Может проявиться как грипп и закончиться без последствий, но может быть опасным для групп риска.
-Количество случаев – 1.                 
+                title: `Hysteria`,
+                info: ` Physical manifestation of mental disorders – 1.                 
         `
             },
             {
@@ -351,7 +349,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Eczema`,
                 info: `
                 dryness and itchiness in small areas anywhere in the body. When the state is developed, the itchy areas spread and the incessant itchiness continues also during the sleep, and also influences its quality. 
-                No. of cases – 15.                
+                No. of cases – 4.                
         `
             },
             {
@@ -359,7 +357,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Hemeralopia`,
                 info: `
                 also known as “day blindness”; inability to see clearly in bright light conditions. 
-                No. of cases – 21.                 
+                No. of cases – 2.                 
         `
             },
             {
@@ -367,7 +365,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Panaritium`,
                 info: `
                 most often paronychia, inflammation and swelling of the skin around a nail of a finger or toe, which occurs from bacterial or fungal infections. 
-                No. of cases – 5.                 
+                No. of cases – 1.                 
         `
             },
             {
@@ -375,7 +373,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Adynamia`,
                 info: `
                 exhaustion that usually has a neurological origin. 
-                No. of cases – 8.               
+                No. of cases – 53.               
         `
             },
             {
@@ -383,7 +381,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Erythema`,
                 info: `
                 redness or skin inflammation owing to capillary dilation and congestion; another possible cause is mucous membranes. At times, this is the sign of an infection. 
-                No. of cases – 13.                                 
+                No. of cases – 4.                                 
         `
             },
             {
@@ -391,7 +389,7 @@ Apart from the hospital beds, the Russian hospital contained a surgery room and 
                 title: `Epilepsia`,
                 info: `
                 a group of neurological disorders characterized by seizures caused by excess and anomalous of nerve cells on the brain’s cerebral cortex. 
-                No. of cases – 3.    
+                No. of cases – 1.    
         `
             }
         ]
