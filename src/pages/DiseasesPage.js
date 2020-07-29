@@ -2,6 +2,7 @@ import React, { useEffect, useContext, useState, useRef } from 'react';
 import { timer, removeTimer } from '../TimerHundler';
 import backgroundEn from '../assets/screen03/03-background_ENG.png';
 import backgroundHeb from '../assets/screen03/03-background_HEB.png';
+import originalDisease from '../assets/screen03/03-PIC.png';
 import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
@@ -80,7 +81,8 @@ function ParticularInfoPage({ homeBtnLogic }) {
 
   return (
     <>
-      <img src={isRightToLeft ? backgroundHeb : backgroundEn} alt='backgroundImage' className='particularBackGround'></img>
+      <img src={isRightToLeft ? backgroundHeb : backgroundEn} alt='backgroundImage' className='particularBackGround' />
+      <img src={originalDisease} alt='backgroundImage' className={isRightToLeft ? 'diseases-pic-heb' : 'diseases-pic-en'} />
       <div ref={textParaEl}
         onScroll={handleScroll}
         className={

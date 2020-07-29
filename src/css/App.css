@@ -409,3 +409,13 @@ height: auto;
 .diseases-title{
   text-decoration: double;
 }
+.diseases-pic-heb{
+  position: fixed;
+  top: 10%;
+  left: 10%
+}
+.diseases-pic-en{
+  position: fixed;
+  top: 10%;
+  right: 10%
+}
