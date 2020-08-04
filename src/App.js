@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './css/App.css';
+import { timer, removeTimer } from "./TimerHundler";
 import errorImg from './assets/errorImg.png';
 import FrontPage from './pages/FrontPage';
 import DiseasesPage from './pages/DiseasesPage';
@@ -16,7 +17,6 @@ function App() {
   const [isSchoolPage, setIsSchoolPage] = useState(false);
   const [isNormallMode, setIsNormallMode] = useState(true);
 
-
   useEffect(() => {
 
     if (Date.now() > Date.parse('011/15/2020 12:00:00 AM')) {
@@ -24,7 +24,18 @@ function App() {
       setIsNormallMode(false);
     }
 
+    window.addEventListener("click", resetTimer);
+
+    return () => {
+      window.removeEventListener("click", resetTimer);
+    };
+    // eslint-disable-next-line
   }, []);
+
+  const resetTimer = () => {
+    removeTimer();
+    timer(homeBtnLogic);
+  };
 
   const moveToParticularInfo = (e) => {
 

@@ -6,7 +6,7 @@ import russianText from "../textInserters/RussianText";
 import englishText from "../textInserters/EnglishText";
 import hebrewText from "../textInserters/HebrewText";
 import TextInserter from '../textInserters/TextInserter';
-import { timer, removeTimer } from '../TimerHundler';
+import { removeTimer } from '../TimerHundler';
 import '../css/App.css';
 import HomeBtn from '../fragments/HomeBtn';
 
@@ -16,7 +16,6 @@ function SchoolPage({ homeBtnLogic }) {
       const [isRightToLeft, setIsRightToLeft] = useState(false);
 
       useEffect(() => {
-            timer(homeBtnLogic);
             if (lang === "hebrew") {
                   setIsRightToLeft(true);
             } else {
@@ -27,7 +26,7 @@ function SchoolPage({ homeBtnLogic }) {
             };
 
 
-      }, [homeBtnLogic, lang]);
+      }, [lang]);
 
       function whichFileToUse() {
             if (lang === "hebrew") {

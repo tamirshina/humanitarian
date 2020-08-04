@@ -20,7 +20,6 @@ function ParticularInfoPage({ homeBtnLogic }) {
   const textParaEl = useRef(null);
 
   useEffect(() => {
-    timer(homeBtnLogic);
     if (lang === "hebrew") {
       setIsRightToLeft(true);
     } else {
@@ -29,7 +28,7 @@ function ParticularInfoPage({ homeBtnLogic }) {
     return () => { // Return callback to run on unmount.
       removeTimer();
     };
-  }, [homeBtnLogic, lang]);
+  }, [lang]);
 
   function resetTimer() {
     removeTimer();
@@ -46,7 +45,6 @@ function ParticularInfoPage({ homeBtnLogic }) {
 
   const scrollAndUpdateDown = () => {
 
-    resetTimer();
     textParaEl.current.scrollTop += 50;
   }
 
@@ -117,7 +115,7 @@ function ParticularInfoPage({ homeBtnLogic }) {
           );
         })}
       </div>
-      <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
+      <ScrollBtns scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
     </>
 
   );

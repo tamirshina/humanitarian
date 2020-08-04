@@ -27,7 +27,6 @@ function TextInserterParticular({ info, position, homeBtnLogic }) {
 
     const scrollAndUpdateDown = () => {
 
-        resetTimer();
         textParaEl.current.scrollTop += 40;
     }
 
@@ -46,7 +45,7 @@ function TextInserterParticular({ info, position, homeBtnLogic }) {
         <div className={isRightToLeft ? 'heb-school-text-container' : 'text-inserter-container'}>
             <p ref={textParaEl} className={isRightToLeft ? 'school-info-heb' : 'text-particular'} id="particularTextBox" dangerouslySetInnerHTML={createMarkup(info.info)}>
             </p>
-            <ScrollBtns homeBtnLogic={homeBtnLogic} scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
+            <ScrollBtns scrollDown={scrollAndUpdateDown} scrollUp={scrollAndUpdateUp} position={isRightToLeft ? hebPosition : position} />
         </div>
     );
 }
