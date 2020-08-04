@@ -7,11 +7,11 @@ import hebrewText from "../textInserters/HebrewText";
 import TextInserter from "../textInserters/TextInserterFront";
 import LangContext from "../LangContext";
 
-function FrontPage({ moveToParticularInfo }) {
+function FrontPage({ moveToParticularInfo, isShowText, opentextbox }) {
 
     const { lang } = useContext(LangContext);
     const [isRightToLeft, setIsRightToLeft] = useState(false);
-    const [isShowText, setIsShowText] = useState(false);
+    //const [isShowText, setIsShowText] = useState(false);
 
     useEffect(() => {
         if (lang === "hebrew") {
@@ -30,10 +30,6 @@ function FrontPage({ moveToParticularInfo }) {
         } else {
             return russianText;
         }
-    }
-    const opentextbox = () => {
-
-        isShowText ? setIsShowText(false) : setIsShowText(true);
     }
 
     return (

@@ -16,6 +16,7 @@ function App() {
   const [isDiseasesPage, setIsDiseasesPage] = useState(false);
   const [isSchoolPage, setIsSchoolPage] = useState(false);
   const [isNormallMode, setIsNormallMode] = useState(true);
+  const [isShowText, setIsShowText] = useState(false);
 
   useEffect(() => {
 
@@ -64,6 +65,12 @@ function App() {
     setIsHospitalPage(false);
     setIsDiseasesPage(false);
     setIsSchoolPage(false);
+    setIsShowText(false);
+  }
+
+  const opentextbox = () => {
+
+    isShowText ? setIsShowText(false) : setIsShowText(true);
   }
 
   return (
@@ -71,7 +78,7 @@ function App() {
       {isNormallMode ?
         <div>
           <LanguageDiv />
-          {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} />}
+          {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} isShowText={isShowText} opentextbox={opentextbox} />}
           {isHospitalPage && <HospitalPage homeBtnLogic={homeBtnLogic} />}
           {isDiseasesPage && <DiseasesPage homeBtnLogic={homeBtnLogic} />}
           {isSchoolPage && <SchoolPage homeBtnLogic={homeBtnLogic} />}
