@@ -26,12 +26,16 @@ function App() {
     }
 
     window.addEventListener("click", resetTimer);
-
+    window.addEventListener('contextmenu', blockContextMenu);
     return () => {
       window.removeEventListener("click", resetTimer);
     };
     // eslint-disable-next-line
   }, []);
+
+  const blockContextMenu = (evt) => {
+    evt.preventDefault();
+  };
 
   const resetTimer = () => {
     removeTimer();

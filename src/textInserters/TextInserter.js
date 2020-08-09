@@ -18,11 +18,6 @@ function TextInserterParticular({ info, position, homeBtnLogic }) {
         }
     }, [lang]);
 
-    function resetTimer() {
-        removeTimer();
-        timer(homeBtnLogic);
-    }
-
     function createMarkup(str) { return { __html: str } };
 
     const scrollAndUpdateDown = () => {
