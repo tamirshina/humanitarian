@@ -20,11 +20,6 @@ function App() {
 
   useEffect(() => {
 
-    if (Date.now() > Date.parse('011/15/2020 12:00:00 AM')) {
-      //start is less than End
-      setIsNormallMode(false);
-    }
-
     window.addEventListener("click", resetTimer);
     window.addEventListener('contextmenu', blockContextMenu);
     return () => {
@@ -79,7 +74,6 @@ function App() {
 
   return (
     <>
-      {isNormallMode ?
         <div>
           <LanguageDiv />
           {isFrontPage && <FrontPage moveToParticularInfo={moveToParticularInfo} isShowText={isShowText} opentextbox={opentextbox} />}
@@ -88,9 +82,6 @@ function App() {
           {isSchoolPage && <SchoolPage homeBtnLogic={homeBtnLogic} />}
           {!isFrontPage && <HomeBtn homeBtnLogic={homeBtnLogic} />}
         </div>
-        :
-        <img src={errorImg} alt='error' className='full-background'></img>
-      }
     </>
 
   );
